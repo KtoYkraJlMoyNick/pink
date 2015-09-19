@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конкурс pink</title>
+</head>
+<body>
+    <div class="wrapper mobile-form-page">
+        <header class="main-header">
+           <div class="container">
+                <a href="#" class="logo-header">pink</a>
+                <a href="#" class="nav-button-header"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="" class="logo-header">pink</a>
+                        <a href="" class="close-main-nav"></a>
+                    </li>
+                    <li><a href="#" class="link-main-nav">информация</a></li>
+                    <li><a href="#" class="link-main-nav">блог</a></li>
+                    <li><a href="#" class="link-main-nav">отзывы</a></li>
+                    <li><a href="#" class="link-main-nav">конкурс</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="descr-page">
+                <div class="container">
+                    <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+                </div>
+            </div>
+            <div class="form-block">
+                <form enctype="multipart/form-data" action="/echo" method="post">
+                    <div class="descr-form">
+                        <div class="container">
+                            <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+                        </div>
+                    </div>
+                    <div class="initials">
+                       <div class="container">
+                            <div class="unit-initials">
+                                <label for="first-name">имя: *</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="unit-initials">
+                                <label for="last-name">фамилия: *</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
+                            </div>
+                            <div class="unit-initials">
+                                <label for="middle-name">отчество: *</label>
+                                <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-form">
+                        <div class="container">
+                            <p>С каким приложением путешествовали? *</p>
+                            <div class="units-app">
+                                <div class="unit-app">
+                                    <label for="ios-btn">Pink для iOS</label>
+                                    <input type="radio" id="ios-btn" name="app-btn">
+                                </div>
+                                <div class="unit-app">
+                                    <label for="android-btn">Pink на Android</label>
+                                    <input type="radio" id="android-btn" name="app-btn">
+                                </div>
+                                <div class="unit-app">
+                                    <label for="windows">Windows Phone</label>
+                                    <input type="radio" id="windows-btn" name="app-btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dates-travel">
+                        <div class="container">
+                            <p>когда вы путешествовали? *</p>
+                            <div class="unit-date-travel">
+                                <input type="text" id="out-date" name="out-date" placeholder="1 апреля 2015">
+                                <label for="out-date">дата выезда</label>
+                            </div>
+                            <div class="unit-date-travel">
+                                <input type="text" id="duration-travel" name="duration-travel" placeholder="10 дней">
+                                <label for="duration-travel">продолжительность</label>
+                            </div>
+                            <div class="unit-date-travel">
+                                <input type="text" id="in-date" name="in-date" placeholder="1 апреля 2015">
+                                <label for="in-date">дата возвращения</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partners">
+                        <div class="container">
+                            <div class="quantity-partners">
+                                <label for="quantity-prt">количество попутчиков *</label>
+                                <div class="quantity-partners-field">
+                                    <button type="button" class=""></button>
+                                    <input type="text" id="quantity-prt" name="quantity-prt" placeholder="2 чел">
+                                    <button type="button" class=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-partners">
+                            <div class="container">
+                                <div class="unit-partner">
+                                    <div class="title-unit-partner">
+                                        <p>№</p>
+                                        <label for="first-name-partner">имя: *</label>
+                                    </div>
+                                    <div class="data-partner">
+                                        <div class="number-partner">1</div>
+                                        <input type="text" id="first-name-partner" name="first-name-partner" placeholder="Введите ваше имя">
+                                    </div>
+                                    <div class="title-unit-partner">
+                                        <label for="nickname-partner">прозвище:</label>
+                                    </div>
+                                    <div class="data-partner">
+                                        <input type="text" id="nickname-partner" name="nickname-partner" placeholder="Ну как же без этого!">
+                                    </div>
+                                </div>
+                                <div class="unit-partner">
+                                    <div class="title-unit-partner">
+                                        <p>№</p>
+                                        <label for="first-name-partner">имя: *</label>
+                                    </div>
+                                    <div class="data-partner">
+                                        <div class="number-partner">2</div>
+                                        <input type="text" id="first-name-partner" name="first-name-partner" placeholder="Введите ваше имя">
+                                    </div>
+                                    <div class="title-unit-partner">
+                                        <label for="nickname-partner">прозвище:</label>
+                                    </div>
+                                    <div class="data-partner">
+                                        <input type="text" id="nickname-partner" name="nickname-partner" placeholder="Ну как же без этого!">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events-travel">
+                        <div class="container">
+                            <p>Ваши безбашенные<br>достижения в путешествии</p>
+                            <div class="events-block">
+                                <div class="unit-event">
+                                    <input type="checkbox" id="event-field-1" name="event-field-1" checked>
+                                    <label for="event-field-1">Сделал селфи с акулой</label>
+                                </div>
+                                <div class="unit-event">
+                                    <input type="checkbox" id="event-field-2" name="event-field-2" checked>
+                                    <label for="event-field-2">Обгорел на пляже</label>
+                                </div>
+                                <div class="unit-event">
+                                    <input type="checkbox" id="event-field-3" name="event-field-3">
+                                    <label for="event-field-3">Видел Чака Норриса</label>
+                                </div>
+                                <div class="unit-event">
+                                    <input type="checkbox" id="event-field-4" name="event-field-4">
+                                    <label for="event-field-4">Накупил сувениров</label>
+                                </div>
+                                <div class="unit-event">
+                                    <input type="checkbox" id="event-field-5" name="event-field-5" checked>
+                                    <label for="event-field-5">Удержал башню</label>
+                                </div>
+                                <div class="unit-event">
+                                    <input type="checkbox" id="event-field-6" name="event-field-6">
+                                    <label for="event-field-6">Разгромил отель</label>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="photos-form">
+                        <div class="container">
+                            <div class="upload-photos">
+                                <p>ваши фотографии из поездки *</p>
+                                <input type="file" name="file-upload" value="загрузить фото">
+                            </div>
+                            <div class="attached-photos">
+                                <div class="unit-photo">
+                                    <img src="" alt="img-1.jpg">
+                                    <p>img-1.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-2.jpg">
+                                    <p>img-2.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-3.jpg">
+                                    <p>img-3.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-4.jpg">
+                                    <p>img-4.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-5.jpg">
+                                    <p>img-5.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-6.jpg">
+                                    <p>img-6.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-7.jpg">
+                                    <p>img-7.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                                <div class="unit-photo">
+                                    <img src="" alt="img-8.jpg">
+                                    <p>img-8.jpg</p>
+                                    <div class="remove-attached-photo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" name="send-form" value="отправить форму">
+                    <p class="required-field-form"><span class="red-star">*</span> &mdash; обязательные поля</p>
+                </form>
+            </div>
+            <footer class="footer-form">
+               <div class="container">
+                    <div class="logo">
+                        <img src="" alt="glasses">
+                        <p>pink</p>
+                    </div>
+                    <div class="media-btn">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                    <div class="developed-info">
+                        <p>Разработано</p>
+                        <img src="" alt="logo-academy">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
