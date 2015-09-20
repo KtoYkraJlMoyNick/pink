@@ -41,15 +41,15 @@
                        <div class="container">
                             <div class="unit-initials">
                                 <label for="first-name">имя: *</label>
-                                <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
+                                <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
                             </div>
                             <div class="unit-initials">
                                 <label for="last-name">фамилия: *</label>
-                                <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
+                                <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию" required>
                             </div>
                             <div class="unit-initials">
                                 <label for="middle-name">отчество: *</label>
-                                <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+                                <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
                             </div>
                         </div>
                     </div>
@@ -59,14 +59,14 @@
                             <div class="units-app">
                                 <div class="unit-app">
                                     <label for="ios-btn">Pink для iOS</label>
-                                    <input type="radio" id="ios-btn" name="app-btn">
+                                    <input type="radio" id="ios-btn" name="app-btn" checked>
                                 </div>
                                 <div class="unit-app">
                                     <label for="android-btn">Pink на Android</label>
                                     <input type="radio" id="android-btn" name="app-btn">
                                 </div>
                                 <div class="unit-app">
-                                    <label for="windows">Windows Phone</label>
+                                    <label for="windows-btn">Windows Phone</label>
                                     <input type="radio" id="windows-btn" name="app-btn">
                                 </div>
                             </div>
@@ -76,15 +76,15 @@
                         <div class="container">
                             <p>когда вы путешествовали? *</p>
                             <div class="unit-date-travel">
-                                <input type="text" id="out-date" name="out-date" placeholder="1 апреля 2015">
+                                <input type="text" id="out-date" name="out-date" placeholder="1 апреля 2015" required>
                                 <label for="out-date">дата выезда</label>
                             </div>
                             <div class="unit-date-travel">
-                                <input type="text" id="duration-travel" name="duration-travel" placeholder="10 дней">
+                                <input type="text" id="duration-travel" name="duration-travel" placeholder="10 дней" required>
                                 <label for="duration-travel">продолжительность</label>
                             </div>
                             <div class="unit-date-travel">
-                                <input type="text" id="in-date" name="in-date" placeholder="1 апреля 2015">
+                                <input type="text" id="in-date" name="in-date" placeholder="1 апреля 2015" disabled>
                                 <label for="in-date">дата возвращения</label>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                 <label for="quantity-prt">количество попутчиков *</label>
                                 <div class="quantity-partners-field">
                                     <button type="button" class=""></button>
-                                    <input type="text" id="quantity-prt" name="quantity-prt" placeholder="2 чел">
+                                    <input type="text" id="quantity-prt" name="quantity-prt" placeholder="2 чел" required>
                                     <button type="button" class=""></button>
                                 </div>
                             </div>
@@ -104,34 +104,34 @@
                             <div class="container">
                                 <div class="unit-partner">
                                     <div class="title-unit-partner">
-                                        <p>№</p>
-                                        <label for="first-name-partner">имя: *</label>
+                                        <span class="symbols-number">№</span>
+                                        <label for="first-name-partner-1">имя: *</label>
                                     </div>
                                     <div class="data-partner">
                                         <div class="number-partner">1</div>
-                                        <input type="text" id="first-name-partner" name="first-name-partner" placeholder="Введите ваше имя">
+                                        <input type="text" id="first-name-partner-1" name="first-name-partner-1" placeholder="Введите ваше имя" required>
                                     </div>
                                     <div class="title-unit-partner">
-                                        <label for="nickname-partner">прозвище:</label>
+                                        <label for="nickname-partner-1">прозвище:</label>
                                     </div>
                                     <div class="data-partner">
-                                        <input type="text" id="nickname-partner" name="nickname-partner" placeholder="Ну как же без этого!">
+                                        <input type="text" id="nickname-partner-1" name="nickname-partner-1" placeholder="Ну как же без этого!">
                                     </div>
                                 </div>
                                 <div class="unit-partner">
                                     <div class="title-unit-partner">
-                                        <p>№</p>
-                                        <label for="first-name-partner">имя: *</label>
+                                        <span class="symbols-number">№</span>
+                                        <label for="first-name-partner-2">имя: *</label>
                                     </div>
                                     <div class="data-partner">
                                         <div class="number-partner">2</div>
-                                        <input type="text" id="first-name-partner" name="first-name-partner" placeholder="Введите ваше имя">
+                                        <input type="text" id="first-name-partner-2" name="first-name-partner-2" placeholder="Введите ваше имя" required>
                                     </div>
                                     <div class="title-unit-partner">
-                                        <label for="nickname-partner">прозвище:</label>
+                                        <label for="nickname-partner-2">прозвище:</label>
                                     </div>
                                     <div class="data-partner">
-                                        <input type="text" id="nickname-partner" name="nickname-partner" placeholder="Ну как же без этого!">
+                                        <input type="text" id="nickname-partner-2" name="nickname-partner-2" placeholder="Ну как же без этого!">
                                     </div>
                                 </div>
                             </div>
@@ -172,61 +172,64 @@
                         <div class="container">
                             <div class="upload-photos">
                                 <p>ваши фотографии из поездки *</p>
-                                <input type="file" name="file-upload" value="загрузить фото">
+                                <div class="upload-btn">
+                                    <label for="file-upload">загрузить фото</label>
+                                    <input type="file" id="file-upload" name="file-upload" required>
+                                </div>
                             </div>
                             <div class="attached-photos">
                                 <div class="unit-photo">
                                     <img src="" alt="img-1.jpg">
-                                    <p>img-1.jpg</p>
+                                    <span class="name-photo">img-1.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-2.jpg">
-                                    <p>img-2.jpg</p>
+                                    <span class="name-photo">img-2.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-3.jpg">
-                                    <p>img-3.jpg</p>
+                                    <span class="name-photo">img-3.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-4.jpg">
-                                    <p>img-4.jpg</p>
+                                    <span class="name-photo">img-4.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-5.jpg">
-                                    <p>img-5.jpg</p>
+                                    <span class="name-photo">img-5.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-6.jpg">
-                                    <p>img-6.jpg</p>
+                                    <span class="name-photo">img-6.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-7.jpg">
-                                    <p>img-7.jpg</p>
+                                    <span class="name-photo">img-7.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                                 <div class="unit-photo">
                                     <img src="" alt="img-8.jpg">
-                                    <p>img-8.jpg</p>
+                                    <span class="name-photo">img-8.jpg</span>
                                     <div class="remove-attached-photo"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <input type="submit" name="send-form" value="отправить форму">
-                    <p class="required-field-form"><span class="red-star">*</span> &mdash; обязательные поля</p>
+                    <span class="required-field-form"><span class="red-star">*</span> &mdash; обязательные поля</span>
                 </form>
             </div>
             <footer class="footer-form">
                <div class="container">
                     <div class="logo">
                         <img src="" alt="glasses">
-                        <p>pink</p>
+                        <span class="title-logo">pink</span>
                     </div>
                     <div class="media-btn">
                         <a href="#"></a>
@@ -234,7 +237,7 @@
                         <a href="#"></a>
                     </div>
                     <div class="developed-info">
-                        <p>Разработано</p>
+                        <span>Разработано</span>
                         <img src="" alt="logo-academy">
                     </div>
                 </div>
