@@ -2,15 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=320px">
     <title>Приложение pink</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="mobile-main-page-wrap">
-        <header class="main-header">
+        <header class="main-header clearfix">
            <div class="container">
-                <a class="page-logo" href="#">pink</a>
-                <a class="main-header__nav-btn main-header__nav-btn--close" href="#"></a>
+                <a class="page-logo" href="#"></a>
+                <a class="main-header__nav-btn" href="#"></a>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
@@ -23,24 +25,25 @@
         </header>
         <div class="content">
             <section class="ad-app">
-               <div class="container">
                     <div class="ad-app__intro">
-                        <p class="ad-app__descr">Взгляните на жизнь иначе!</p>
+                            <p class="ad-app__descr">Взгляните на жизнь<br>иначе!</p>
+                            <img class="ad-app__smartphone" width="320" height="313" src="./img/p/p-iphone-hand.png" alt="smartphone">
                     </div>
-                    <div class="app-download">
-                        <a class="app-download__link" href="#">Скачать приложение</a>
-                        <div class="app-download__systems">
-                            <div class="app-download__img-systems">
-                                <ul class="app-download__list-systems">
-                                    <li class="app-download__list-item"><img src="/" alt="apple"></li>
-                                    <li class="app-download__list-item"><img src="/" alt="android"></li>
-                                    <li class="app-download__list-item"><img src="/" alt="windows"></li>
-                                </ul>
-                                </div>
-                            <p class="app-download__systems-descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8</p>
+                    <div class="ad-app__download">
+                       <div class="container">
+                            <a class="ad-app__download-link" href="#">Скачать приложение</a>
+                            <div class="ad-app__systems">
+                                <div class="ad-app__img-systems">
+                                    <ul class="ad-app__list-systems">
+                                        <li class="ad-app__list-item"><img src="./img/i/i-apple-logo.png" width="46" height="57" alt="apple"></li>
+                                        <li class="ad-app__list-item"><img src="./img/i/i-android-logo.png" width="42" height="47" alt="android"></li>
+                                        <li class="ad-app__list-item"><img src="./img/i/i-windows-logo.png" width="44" height="42" alt="windows"></li>
+                                    </ul>
+                                    </div>
+                                <p class="ad-app__systems-descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8</p>
+                           </div>    
                         </div>
                     </div>
-                </div>
             </section>
             <section class="edge-app">
                 <div class="edge-app__title">
@@ -64,15 +67,15 @@
                             <h3 class="edge-app__sample-header">Заводит новых друзей</h3>
                             <p class="edge-app__sample-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых!</p>
                     </div>
-                        <img class="edge-app__img-smartphone" src="/" alt="smartphone">
                     </div>
                 </div>
+                        <img class="edge-app__img-smartphone" src="./img/p/p-ihone-screen.png" width="157" height="320"  alt="smartphone">
             </section>
             <section class="sliders">
                 <div class="reviews-slider">
-                       <input class="muted-radio-btn" type="radio" id="review-btn-1" value="review-slide-1" name="toogle-review" checked>
-                       <input class="muted-radio-btn" type="radio" id="review-btn-2" value="review-slide-2" name="toogle-review">
-                       <input class="muted-radio-btn" type="radio" id="review-btn-3" value="review-slide-3" name="toogle-review">
+                       <input class="reviews-slider__input" type="radio" id="review-btn-1" value="review-slide-1" name="toogle-review" checked>
+                       <input class="reviews-slider__input" type="radio" id="review-btn-2" value="review-slide-2" name="toogle-review">
+                       <input class="reviews-slider__input" type="radio" id="review-btn-3" value="review-slide-3" name="toogle-review">
                        <div class="reviews-slider__controls">
                            <label class="reviews-slider__controls-label" for="review-btn-1"></label>
                            <label class="reviews-slider__controls-label" for="review-btn-2"></label>
@@ -101,9 +104,9 @@
                     <img class="triangle" src="/" alt="triangle">
                 </div>
                 <div class="offers-slider">
-                    <input class="muted-radio-btn" type="radio" id="offer-btn-1" value="baza" name="toogle-offers">
-                    <input class="muted-radio-btn" type="radio" id="offer-btn-2" value="standart" name="toogle-offers" checked>
-                    <input class="muted-radio-btn" type="radio" id="offer-btn-3" value="unlim" name="toogle-offers">
+                    <input class="offers-slider__radio" type="radio" id="offer-btn-1" value="baza" name="toogle-offers">
+                    <input class="offers-slider__radio" type="radio" id="offer-btn-2" value="standart" name="toogle-offers" checked>
+                    <input class="offers-slider__radio" type="radio" id="offer-btn-3" value="unlim" name="toogle-offers">
                     <div class="offers-slider__controls">
                         <label class="offers-slider__controls-label" for="offer-btn-1"></label>
                         <label class="offers-slider__controls-label" for="offer-btn-2"></label>
@@ -115,8 +118,8 @@
                                 <div class="container">
                                     <h3 class="offers-slider__tariff-header">база</h3>
                                     <span class="offers-slider__tariff-price">1,99 usd</span>
-                                    <div class="offers-slider__hit-label"></div>
                                 </div>
+                                <div class="offers-slider__hit-label"></div>
                             </div>
                             <div class="offers-slider__edge-tariff">
                                 <ul class="offers-slider__list">
@@ -125,11 +128,11 @@
                                         <div class="offers-slider__track-no"></div>
                                     </li>
                                     <li class="offers-slider__list-item">
-                                        <div class="title-edge-tariff">смайлики</div>
+                                        <div class="offers-slider__title-edge">смайлики</div>
                                         <div class="offers-slider__track-no"></div>
                                     </li>
                                     <li class="offers-slider__list-item">
-                                        <div class="title-edge-tariff">комментарии</div>
+                                        <div class="offers-slider__title-edge">комментарии</div>
                                         <div class="offers-slider__track-yes"></div>
                                     </li>
                                 </ul>
@@ -140,8 +143,8 @@
                                 <div class="container">
                                     <h3 class="offers-slider__tariff-header">стандарт</h3>
                                     <span class="offers-slider__tariff-price">3,99 usd</span>
-                                    <div class="offers-slider__hit-label"></div>
                                 </div>
+                                <div class="offers-slider__hit-label"></div>
                             </div>
                             <div class="offers-slider__edge-tariff">
                                 <ul class="offers-slider__list">
@@ -165,8 +168,8 @@
                                 <div class="container">
                                     <h3 class="offers-slider__tariff-header">анлим</h3>
                                     <span class="offers-slider__tariff-price">9,99 usd</span>
-                                    <div class="offers-slider__hit-label"></div>
                                 </div>
+                                <div class="offers-slider__hit-label"></div>
                             </div>
                             <div class="offers-slider__edge-tariff">
                                 <ul class="offers-slider__list">
@@ -196,14 +199,17 @@
                             <h4 class="info-company__contact-header">Звоните:</h4>
                             <span class="info-company__contact-option">+7 (812) 555-66-66</span>
                         </div>
-                        <div class="contact">
+                        <div class="info-company__contact">
                             <h4 class="info-company__contact-header">Пишите:</h4>
                             <span  class="info-company__contact-option">mail@htmlacademy.ru</span>
                         </div>
                     </div>
                 </div>
                 <div class="info-company__location">
-                    <span class="info-company__location-address">ул. Большая<br>Конюшенная, 19/8</span>
+                   <div class="info-company__contact">
+                        <h4 class="info-company__contact-header">Приезжайте в гости:</h4>
+                        <span class="info-company__contact-option">ул. Большая<br>Конюшенная, 19/8</span>
+                    </div>    
                     <div class="info-company__map">
                         <div class="info-company__map-triangle"></div>
                         <a class="info-company__map-btn" href=""></a>
