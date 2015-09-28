@@ -3,22 +3,21 @@
     padding: 0 0 323.5px;
     background-color: @color-second;
     overflow: hidden;
-        img {
+    &__img-smartphone{
             position: absolute;
             left: 50%;
             bottom: -42px;
             margin-left: -78.5px; 
-        }
+     }
     &__title {
+		position: relative;
         padding: 46px 0 60px;
         background: @color-main;
+
     }
     &__title-unit {
-        font-family: @font;
-        font-size: 1.71rem;
-        line-height: 24px;
+		font: 300 2.4rem/2.4rem @font;
         color: @color-fourth;
-        font-weight: 300;
         text-align: center;
         &:first-child {
             margin-bottom: 35px;
@@ -32,19 +31,18 @@
     }
     &__sample-header {
         margin: 0 0 14px;
-        font-family: @font;
-        font-size: 1.29rem;
-        line-height: 1.29rem;
+		font: 700 1.8rem/1.8rem @font;
         color: @color-h3;
-        font-weight: 700;
     }
     &__sample-descr {
         margin: 0 0 35px;
-        font-family: @font;
-        font-size: 1rem;
-        line-height: 1.71rem;
+		font: 400 1.4rem/2.4rem @font;
         color: @color-fourth;
-        font-weight: 400;
     }
+	&__triangle {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
     
 }

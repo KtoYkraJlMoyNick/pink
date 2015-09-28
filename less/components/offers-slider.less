@@ -23,7 +23,8 @@
         border-radius: 50%;
         &:last-child {
             margin: 0;
-            border-color: aqua;
+            border-color: @color-fourth;
+			background-color: @color-main;
         }
     }
     &__slides {
@@ -53,18 +54,12 @@
         text-align: center;
     }
     &__tariff-header {
-        font-family: @font;
-        font-size:  1.29rem;
-        line-height: 30px;
-        font-weight: 700;
+		font: 700 1.8rem/3rem @font;
         color: @color-main;
         text-transform: uppercase;
     }
     &__tariff-price {
-        font-family: @font;
-        font-size: 1.71rem;
-        line-height: 30px;
-        font-weight: 300;
+		font: 300 2.4rem/3rem @font;
         color: @color-main;
     }
     &__hit-label {
@@ -90,15 +85,12 @@
         }
     }
     &__title-edge {
-        margin-left: 22px;
+        margin:0 55px 0 22px;
         padding: 14px 0;
-        font-family: @font;
-        font-size: 1rem;
-        line-height: 30px;
-        font-weight: 400;
+		font: 400 1.4rem/3rem @font;
         color: @color-fourth;
         text-transform: uppercase;
-    
+    	overflow: hidden;
     }
     &__track-yes {
         position: absolute;

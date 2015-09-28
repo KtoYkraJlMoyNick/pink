@@ -27,7 +27,8 @@
         border-radius: 50%;
         &:last-child {
             margin: 0;
-            border: 2.5px solid #000;
+            border-color: @color-fourth;
+			background-color: @color-main;
         }
     }
     &__slides {
@@ -43,15 +44,14 @@
     }
     &__slide-header {
         margin: 0 0 14px;
-        font-family: @font;
-        font-size: 1.29rem;
-        line-height: 30px;
-        font-weight: 700;
+		font: 700 1.8rem/3rem @font;
     }
     &__slide-descr {
-        font-family: @font;
-        font-size: 1rem;
-        line-height: 30px;
-        font-weight: 400;
+		font: 400 1.4rem/3rem @font;
     }
+	&__triangle {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
 }
