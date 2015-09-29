@@ -1,0 +1,61 @@
+.reviews-slider {
+    position: relative;
+    background-color: @color-main;
+    &__input {
+        display: none;
+    }
+    &__controls {
+        position: absolute;
+        left: 50%;
+        bottom: 65px;
+        margin: 0 0 0 -31px;
+        display: inline-block;
+        vertical-align: top;
+        width: 62px;
+        height: 10.5px;
+        text-align: center;
+        font-size: 0;
+    }
+    &__controls-label {
+        margin: 0 13px 0 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 5.5px;
+        height: 5.5px;
+        background-color: #bec2c7;
+        border: 2.5px solid @color-main;
+        border-radius: 50%;
+        &:last-child {
+            margin: 0;
+            border-color: @color-fourth;
+			background-color: @color-main;
+        }
+    }
+    &__slides {
+        
+    }
+    &__slide {
+        display: none;
+        padding: 24px 0 107px;
+        text-align: center;
+        &:first-child {
+            display: block;
+        }
+    }
+    &__slide-header {
+        margin: 0 0 14px;
+		font: 700 1.8rem/3rem @font;
+    }
+    &__slide-descr {
+		font: 400 1.4rem/3rem @font;
+    }
+	&__triangle {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 320px;
+		height: 34px;
+		background-image: linear-gradient(-6deg, @color-second 50%, transparent 50% );
+	}
+}

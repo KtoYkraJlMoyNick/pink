@@ -1,0 +1,29 @@
+.main-nav {
+    position: absolute;
+    left: 0;
+    top: 66px;
+    display: none;
+    width: 100%;
+    &__list {
+    
+    }
+    &__item {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #485461;
+        &:first-child {
+            border-top: none;
+        }
+        a {
+            display: block;
+            padding: 18px 0 13px;
+			font: 700 1.8rem/3.2rem @font;
+            color: @color-main;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            background: @color-fourth;
+        }
+    }
+}
