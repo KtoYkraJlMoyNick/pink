@@ -1,0 +1,57 @@
+.info-company {
+    background-color: @color-main;
+    &__contacts {
+        padding: 48px 0 0;
+        text-align: center;
+    }
+    &__contacts-header {
+        margin: 0 0 42px;
+		font: 300 2.4rem/2.4rem @font;
+        color: @color-fourth;
+    }
+    &__contact{
+        margin: 0 0 26px;
+    }
+    &__contact-header {
+        margin: 0 0 10px;
+		font: 700 1.8rem/1.8rem @font;
+        color: @color-fourth;
+    }
+    &__contact-option {
+		font: 300 2.4rem/2.4rem @font;
+        color: @color-fifth;
+    }
+    &__location {
+        text-align: center;
+    }
+    &__location-address {
+        
+    }
+    &__map {
+        position: relative;
+        overflow: hidden;
+        height: 215px;
+        background: @color-second url('../img/p/p-map.jpg') no-repeat 0 100%;
+        text-align: center;
+    }
+    &__map-triangle {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 45px;
+        background: transparent url('../img/p/p-map-triangle.png') no-repeat 0 100%;
+    
+    }
+    &__map-btn {
+        position: absolute;
+        left: 143px;
+        bottom: 68px;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #d22856;
+        border: 9.5px solid @color-main;
+        border-radius: 50%;
+    }
+}
