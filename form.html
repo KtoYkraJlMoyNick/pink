@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=320px">
     <title>Форма pink</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="mobile-form-page-wrap">
@@ -37,16 +39,16 @@
                     <div class="initials">
                        <div class="container">
                             <div class="initials__unit">
-                                <label class="form-label" for="first-name">имя: *</label>
-                                <input class="form-input-text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
+                                <label class="initials__label" for="first-name">имя: *</label>
+                                <input class="initials__input-text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
                             </div>
                             <div class="initials__unit">
-                                <label class="form-label" for="last-name">фамилия: *</label>
-                                <input class="form-input-text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию" required>
+                                <label class="initials__label" for="last-name">фамилия: *</label>
+                                <input class="initials__input-text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию" required>
                             </div>
                             <div class="initials__unit">
-                                <label class="form-label" for="middle-name">отчество: *</label>
-                                <input class="form-input-text" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
+                                <label class="initials__label" for="middle-name">отчество:</label>
+                                <input class="initials__input-text" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
                             </div>
                         </div>
                     </div>
@@ -55,16 +57,16 @@
                             <p class="app-form__header">С каким приложением путешествовали? *</p>
                             <div class="app-form__units">
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="ios-btn">Pink для iOS</label>
-                                    <input class="muted-radio-btn" type="radio" id="ios-btn" name="app-btn" value="ios" checked>
+                                    <label class="app-form__label" for="ios-btn"><span class="app-form__checked"></span>Pink для iOS</label>
+                                    <input class="app-form__radio-btn" type="radio" id="ios-btn" name="app-btn" value="ios" checked>
                                 </div>
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="android-btn">Pink на Android</label>
-                                    <input class="muted-radio-btn" type="radio" id="android-btn" name="app-btn" value="android">
+                                    <label class="app-form__label" for="android-btn"><span></span>Pink на Android</label>
+                                    <input class="app-form__radio-btn" type="radio" id="android-btn" name="app-btn" value="android">
                                 </div>
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="windows-btn">Windows Phone</label>
-                                    <input class="muted-radio-btn" type="radio" id="windows-btn" name="app-btn" value="windows">
+                                    <label class="app-form__label" for="windows-btn"><span></span>Windows Phone</label>
+                                    <input class="app-form__radio-btn" type="radio" id="windows-btn" name="app-btn" value="windows">
                                 </div>
                             </div>
                         </div>
@@ -73,8 +75,8 @@
                         <div class="container">
                             <p class="dates-travel__descr">когда вы путешествовали? *</p>
                             <div class="dates-travel__item">
-                                <input class="form-input-text" type="text" id="out-date" name="out-date" placeholder="1 апреля 2015" required>
-                                <label class="form-label" for="out-date">дата выезда</label>
+                                <input class="dates-travel__input-text" type="text" id="out-date" name="out-date" placeholder="1 апреля 2015" required>
+                                <label class="dates-travel__label" for="out-date">дата выезда</label>
                             </div>
                             <div class="dates-travel__item">
                                <div class="form-custom-input">
@@ -82,11 +84,11 @@
                                 	<input class="form-custom-input__input-text" type="text" id="duration-travel" name="duration-travel" placeholder="10 дней" required>
                                 	<button class="form-custom-input__btn-aggr form-custom-input__btn-aggr--plus" type="button"></button>
                                 </div>
-                                <label class="form-label" for="duration-travel">продолжительность</label>
+                                <label class="dates-travel__label" for="duration-travel">продолжительность</label>
                             </div>
                             <div class="dates-travel__item">
-                                <input class="form-input-text  form-input-text--disabled" type="text" id="in-date" name="in-date" placeholder="1 апреля 2015" disabled>
-                                <label class="form-label" for="in-date">дата возвращения</label>
+                                <input class="dates-travel__input-text  dates-travel__input-text--disabled" type="text" id="in-date" name="in-date" placeholder="1 апреля 2015" disabled>
+                                <label class="dates-travel__label" for="in-date">дата возвращения</label>
                             </div>
                         </div>
                     </div>
@@ -106,7 +108,7 @@
                                 <div class="partners__item">
                                     <div class="partners__title">
                                         <span class="partners__symbols-number">№</span>
-                                        <label class="form-label" for="first-name-partner-1">имя: *</label>
+                                        <label class="partners__label" for="first-name-partner-1">имя: *</label>
                                     </div>
                                     <div class="partners__data">
                                         <div class="partners__number">1</div>
@@ -222,8 +224,12 @@
                             </div>
                         </div>
                     </div>
-                    <input class="travel-form__submit" type="submit" name="send-form" value="отправить форму">
-                    <span class="travel-form__required-field"><span class="red-star">*</span> &mdash; обязательные поля</span>
+                    <div class="travel-form__send">
+                        <div class="container">
+                            <input class="travel-form__submit" type="submit" name="send-form" value="отправить форму">
+                            <span class="travel-form__required-field"><span class="red-star">*</span> &mdash; обязательные поля</span>
+                        </div>
+                    </div>
                 </form>
             </div>
             <footer class="footer-form">
