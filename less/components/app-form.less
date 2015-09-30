@@ -1,24 +1,41 @@
 .app-form {
+	padding: 40px 0 0 0;
     background-color: @color-second;
     text-align: center;
     &__header {
+		margin: 0 0 38px 0;
 		font: 400 1.4rem/1.8rem @font;
         color: @color-fifth;
         text-transform: uppercase;
     }
     &__units {
-    
+    	padding: 0 0 6px 0;
     }
     &__unit {
         text-align: left;
     }
     &__label {
+		position: relative;
+		display: block;
+		margin: 0 0 36px 0;
+		padding: 4px 0 5px 61px;;
+		font: 400 1.8rem/3rem @font;
+		color: @color-fourth;
         span {
-            
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			vertical-align: top;
+            width: 35px;
+            height: 35px;
+			border: 2px solid #e5e5e5;
+			border-radius: 50%;
+			background-color: @color-main;
         }
     }
     &__checked{
-        
+			background-color: aquamarine;
     }
     &__radio-btn {
         display: none;

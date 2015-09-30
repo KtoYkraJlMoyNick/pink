@@ -1,0 +1,49 @@
+.custom-input {
+	padding: 19px 0 17px 0;
+	font-size: 0;
+	&__btn-minus {
+		display: inline-block;
+		vertical-align: top;
+		width: 60px;
+		height: 67px;
+		box-sizing: border-box;
+		outline: none;
+        border: 2px solid #e5e5e5;
+		border-right: none;
+		border-radius: 3px 0 0 3px;
+		background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
+		cursor: pointer;
+	}
+	&__btn-plus {
+		display: inline-block;
+		vertical-align: top;
+		width: 60px;
+		height: 67px;
+		box-sizing: border-box;
+		outline: none;
+		border: none;
+		background-color: @color-main;
+        border: 2px solid #e5e5e5;
+		border-left: none;
+		border-radius: 0 3px 3px 0;
+		background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
+		cursor: pointer;
+	}
+	&__input-text {
+		display: inline-block;
+		vertical-align: top;
+        padding: 16.5px 22.5px;
+        width: 160px;
+		font: 400 1.8rem/3rem @font;
+        color: @color-third;
+		text-align: center;
+        box-sizing: border-box;
+        border: 2px solid #e5e5e5;
+        &::-webkit-input-placeholder {
+           color: @color-third;
+        }
+		&--mod {
+			background-color: @color-second;
+		}
+	}
+}
