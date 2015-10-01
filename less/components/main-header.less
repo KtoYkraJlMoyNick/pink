@@ -5,7 +5,7 @@
     z-index: 10;
     background-color: rgba(28,38,48,.3);
     width: 100%;
-    font-size: 0rem;
+    font-size: 0;
 	&__nav-control {
         display: inline-block;
         vertical-align: top;
@@ -20,8 +20,11 @@
 		cursor: pointer;
     }
 	&__nav-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 66px;
 		display: none;
-		
 	}
 	&__input {
 		display: none;

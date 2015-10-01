@@ -1,22 +1,27 @@
 .media-btn {
 	margin: 0 0 39px 0;
+    font-size: 0;
 	text-align: center;
 	&__link {
 		display: inline-block;
 		vertical-align: top;
+        margin: 0 12px 0 0;
 		width: 51px;
 		height: 51px;
 		box-sizing: border-box;
 		border: 2px solid #e5e5e5;
 		border-radius: 50%;
+        &:last-child {
+            margin: 0;
+        }
 		&--twit {
-		
+		    background: transparent url('../img/i/i-twitter.png') no-repeat 50% 50%;
 		}
 		&--fb {
-		
+		    background: transparent url('../img/i/i-fb.png') no-repeat 50% 50%;
 		}
 		&--tube {
-		
+		    background: transparent url('../img/i/i-tube.png') no-repeat 50% 50%;
 		}
 	}
 }
