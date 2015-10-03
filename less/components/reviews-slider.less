@@ -12,7 +12,7 @@
         display: inline-block;
         vertical-align: top;
         width: 62px;
-        height: 10.5px;
+        height: 12px;
         text-align: center;
         font-size: 0;
     }
@@ -20,15 +20,14 @@
         margin: 0 13px 0 0;
         display: inline-block;
         vertical-align: top;
-        width: 5.5px;
-        height: 5.5px;
+        width: 6px;
+        height: 6px;
         background-color: #bec2c7;
-        border: 2.5px solid @color-main;
+        border: 3px solid @color-main;
         border-radius: 50%;
+        cursor: pointer;
         &:last-child {
             margin: 0;
-            border-color: @color-fourth;
-			background-color: @color-main;
         }
     }
     &__slides {
@@ -38,9 +37,6 @@
         display: none;
         padding: 24px 0 107px;
         text-align: center;
-        &:first-child {
-            display: block;
-        }
     }
     &__slide-header {
         margin: 0 0 14px;
@@ -58,4 +54,6 @@
 		height: 34px;
 		background-image: linear-gradient(-6deg, @color-second 50%, transparent 50% );
 	}
+    .show-review-slide(reviews-slider__, 3);
+    .show-label(reviews-slider__, 3);
 }

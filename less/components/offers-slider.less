@@ -1,7 +1,8 @@
 .offers-slider {
     position: relative;
-    padding: 66px 0 100px;
+    height: 442px;
     background-color: @color-second;
+    overflow: hidden;
     &__radio {
         display: none;
     }
@@ -9,25 +10,27 @@
         position: absolute;
         left: 50%;
         bottom: 45px;
-        width: 62px;
+        width: 70px;
+        height: 12px;
         margin: 0 0 0 -31px;
         text-align: center;
     }
     &__controls-label {
         margin: 0 13px 0 0;
         display: inline-block;
-        width: 5.5px;
-        height: 5.5px;
+        width: 6px;
+        height: 6px;
         background-color: #bec2c7;
-        border: 2.5px solid @color-second;
+        border: 3px solid @color-second;
         border-radius: 50%;
+        cursor: pointer;
         &:last-child {
             margin: 0;
-            border-color: @color-fourth;
-			background-color: @color-main;
         }
     }
     &__slides {
+        position: absolute;
+        top: 66px;
         background-color: @color-main;
         font-size: 0;
         white-space: nowrap;
@@ -36,22 +39,28 @@
     &__slide {
         display: inline-block;
         vertical-align: top;
-        border: 1.5px solid #e5e5e5;
+        border: 2px solid @color-gray;
         border-top: none;
         &:nth-child(2) {
             border: none;
-            border-bottom: 1.5px solid #e5e5e5;
-            .offers-slider__hit-label {
-                display: block;
-            }
+            border-bottom: 2px solid @color-gray;
         }
-        
     }
     &__tariff {
         position: relative;
         padding: 19px 0;
         background-color: @color-fourth;
         text-align: center;
+        &--mod:after {   
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            content:""; 
+            display: block;
+            width: 74px;
+            height: 73px;
+            background: transparent url('../img/i/i-label-hit.png') no-repeat 0 0;
+        }
     }
     &__tariff-header {
 		font: 700 1.8rem/3rem @font;
@@ -61,16 +70,6 @@
     &__tariff-price {
 		font: 300 2.4rem/3rem @font;
         color: @color-main;
-    }
-    &__hit-label {
-        position: absolute;
-        top: -1px;
-        left: -1px;
-        display: none;
-        width: 74px;
-        height: 73px;
-        background: transparent url('../img/i/i-label-hit.png') no-repeat 0 0;
-        
     }
     &__edge-tariff {
     }
@@ -108,7 +107,8 @@
         margin-top: -13px;
         width: 26px;
         height: 26px;
-        background: transparent url('../img/i//i-no.png') no-repeat 0 0;
-        
+        background: transparent url('../img/i//i-no.png') no-repeat 0 0; 
     }
+    .show-offer-slide(offers-slider__, 3);
+    .show-label(offers-slider__, 3);
 }

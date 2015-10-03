@@ -10,23 +10,21 @@
 <body>
     <div class="mobile-form-page-wrap">
         <header class="main-header">
-           <div class="container">
+            <input class="main-header__input" type="checkbox" id="main-header__nav" name="nav">
+            <div class="container">
                 <a class="page-logo" href="#"><img src="./img/i/i-page-logo.png" alt="pink"></a>
-                <div class="main-header__nav-control">
-					<label class="main-header__label" for="nav"></label>
-                	<input class="main-header__input" type="checkbox" id="nav" name="nav">
-                </div>	
+                <label class="main-header__label" for="main-header__nav"></label>
             </div>
-            <div class="main-header__nav-wrap">
-            	<nav class="main-nav">
-                	<ul class="main-nav__list">
-                    	<li class="main-nav__item"><a href="#">информация</a></li>
-                    	<li class="main-nav__item"><a href="#">блог</a></li>
-                    	<li class="main-nav__item"><a href="#">отзывы</a></li>
-                    	<li class="main-nav__item"><a href="#">конкурс</a></li>
-                	</ul>
-            	</nav>
-            </div>	
+              <div class="main-header__nav-wrap">
+            	  <nav class="main-nav">
+                	 <ul class="main-nav__list">
+                    	  <li class="main-nav__item"><a href="#">информация</a></li>
+                    	  <li class="main-nav__item"><a href="#">блог</a></li>
+                    	  <li class="main-nav__item"><a href="#">отзывы</a></li>
+                    	  <li class="main-nav__item"><a href="#">конкурс</a></li>
+                    </ul>
+            	  </nav>
+              </div>
         </header>
         <div class="content">
             <div class="descr-page">
@@ -62,16 +60,16 @@
                             <p class="app-form__header">С каким приложением путешествовали? *</p>
                             <div class="app-form__units">
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="ios-btn"><span class="app-form__checked"></span>Pink для iOS</label>
-                                    <input class="app-form__radio-btn" type="radio" id="ios-btn" name="app-btn" value="ios" checked>
+                                   <input class="app-form__radio-btn" type="radio" id="ios-btn" name="app-btn" value="ios" checked>
+                                    <label class="app-form__label" for="ios-btn"><span></span>Pink для iOS</label>  
                                 </div>
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="android-btn"><span></span>Pink на Android</label>
                                     <input class="app-form__radio-btn" type="radio" id="android-btn" name="app-btn" value="android">
+                                    <label class="app-form__label" for="android-btn"><span></span>Pink на Android</label>
                                 </div>
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="windows-btn"><span></span>Windows Phone</label>
                                     <input class="app-form__radio-btn" type="radio" id="windows-btn" name="app-btn" value="windows">
+                                    <label class="app-form__label" for="windows-btn"><span></span>Windows Phone</label>
                                 </div>
                             </div>
                         </div>

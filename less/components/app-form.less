@@ -34,7 +34,7 @@
 			background-color: @color-main;
             &:after {
                 content: "";
-                display: block;
+                display: none;
                 margin-top: 50%;
                 margin-left: 50%;
                 transform: translateY(-50%) translateX(-50%);
@@ -45,10 +45,10 @@
             }
         }
     }
-    &__checked{
-			background-color: aquamarine;
-    }
     &__radio-btn {
         display: none;
+        &:checked ~ .app-form__label span:after{
+            display: block;
+        }
     }
 }

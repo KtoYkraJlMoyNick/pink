@@ -1,0 +1,32 @@
+.show-review-slide(@r, @n, @i:1) when (@i =< @n) {
+    #@{r}btn-@{i}:checked ~ .@{r}slides .@{r}slide:nth-child(@{i}) {
+        display:block;
+    }
+    .show-review-slide(@r, @n, (@i + 1));
+} 
+.show-label(@r, @n, @i:1) when (@i =< @n) {
+    #@{r}btn-@{i}:checked ~ .@{r}controls .@{r}controls-label:nth-child(@{i}) {
+        border-color: @color-fourth;
+        background-color: @color-main;
+    }    
+    .show-label(@r, @n, (@i + 1));
+}
+.show-offer-slide(@r, @n, @i:1) when (@i = 1) {
+    #@{r}btn-@{i}:checked ~ .@{r}slides {
+            left: 0; 
+    }
+    .show-offer-slide(@r, @n, (@i + 1));
+}
+.show-offer-slide(@r, @n, @i:1) when (@i = 2) {
+    #@{r}btn-@{i}:checked ~ .@{r}slides {
+            left: -262px; 
+    }
+    .show-offer-slide(@r, @n, (@i + 1));
+}
+.show-offer-slide(@r, @n, @i:1) when (@i = 3) {
+    #@{r}btn-@{i}:checked ~ .@{r}slides {
+            right: 0; 
+    }
+    .show-offer-slide(@r, @n, (@i + 1));
+}
+
