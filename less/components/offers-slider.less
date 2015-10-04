@@ -10,13 +10,13 @@
         position: absolute;
         left: 50%;
         bottom: 38px;
-        width: 70px;
+        width: 68px;
         height: 12px;
         margin: 0 0 0 -31px;
         text-align: center;
     }
     &__controls-label {
-        margin: 0 13px 0 0;
+        margin: 0 10px 0 0;
         display: inline-block;
         width: 6px;
         height: 6px;
@@ -48,7 +48,7 @@
     }
     &__tariff {
         position: relative;
-        padding: 19px 0;
+        padding: 17px 0 21px;
         background-color: @color-fourth;
         text-align: center;
         &--mod:after {   
@@ -70,6 +70,7 @@
     &__tariff-price {
 		font: 300 2.4rem/3rem @font;
         color: @color-main;
+        text-transform: uppercase;
     }
     &__edge-tariff {
     }
@@ -78,7 +79,7 @@
     }
     &__list-item {
         position: relative;
-        border-bottom: 1.5px solid #e5e5e5;
+        border-bottom: 2px solid @color-gray;
         &:last-child {
             border-bottom: none;
         }
@@ -109,6 +110,14 @@
         height: 26px;
         background: transparent url('../img/i//i-no.png') no-repeat 0 0; 
     }
-    .show-offer-slide(offers-slider__, 3);
+    #offers-slider__btn-1:checked  ~ .offers-slider__slides {
+        left: 0;
+    }
+    #offers-slider__btn-2:checked  ~ .offers-slider__slides {
+         left: -262px;
+     }
+     #offers-slider__btn-3:checked  ~ .offers-slider__slides {
+         right: 0;
+     }
     .show-label(offers-slider__, 3);
 }

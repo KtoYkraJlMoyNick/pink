@@ -1,14 +1,17 @@
 .custom-input {
-	padding: 23px 0 17px 0;
+	padding: 20px 0 9px;
 	font-size: 0;
+    &--mod {
+        padding: 27px 0 16px;
+    }
 	&__btn-minus {
 		display: inline-block;
 		vertical-align: top;
 		width: 60px;
-		height: 67px;
+		height: 62px;
 		box-sizing: border-box;
 		outline: none;
-        border: 2px solid #e5e5e5;
+        border: 2px solid @color-gray;
 		border-right: none;
 		border-radius: 3px 0 0 3px;
 		background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
@@ -18,12 +21,12 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 60px;
-		height: 67px;
+		height: 62px;
 		box-sizing: border-box;
 		outline: none;
 		border: none;
 		background-color: @color-main;
-        border: 2px solid #e5e5e5;
+        border: 2px solid @color-gray;
 		border-left: none;
 		border-radius: 0 3px 3px 0;
 		background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
@@ -32,13 +35,13 @@
 	&__input-text {
 		display: inline-block;
 		vertical-align: top;
-        padding: 16.5px 22.5px;
+        padding: 14px 22px;
         width: 160px;
 		font: 400 1.8rem/3rem @font;
         color: @color-third;
 		text-align: center;
         box-sizing: border-box;
-        border: 2px solid #e5e5e5;
+        border: 2px solid @color-gray;
         &::-webkit-input-placeholder {
            color: @color-third;
         }
