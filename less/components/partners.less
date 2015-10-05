@@ -1,0 +1,77 @@
+.partners {
+	padding: 31px 0 29px 0;
+	background-color: @color-second;
+	text-align: center;
+	&__quantity {
+        padding: 0 0 31px 0;
+	}
+	&__label {
+        display: inline-block;
+        vertical-align: top;
+		font: 400 1.4rem/3rem @font;
+		color: @color-fifth;
+		text-transform: uppercase;
+        &--mod {
+            padding: 7px 0 7px 25px;
+        }
+	}
+	&__input-text {
+	    display: block;
+        padding: 13px 0 14px 22px;
+		font: 400 1.8rem/3rem @font;
+        color: @color-third;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 2px solid @color-gray;
+        border-radius: 0 3px 3px 0;
+        &::-webkit-input-placeholder {
+           color: @color-third;
+        }
+        &--mod {
+            border-radius: 3px;
+        }
+	}
+	&__data {
+        display: inline-block;
+        vertical-align: top;
+        width: 221px;
+        &--mod {
+            float: right;
+            margin: 8px 0 23px 0;
+        }
+	}
+    &__info {
+        font-size: 0;
+    }
+	&__item {
+		text-align: left;
+        &:first-child {
+	    padding: 22px 0 7px ;
+        border-top: 2px solid @color-gray;
+        
+        }
+	}
+	&__title {
+        display: inline-block;
+        vertical-align: top;
+        width: 59px;
+	}
+	&__symbols-number {
+	    display: block;
+        padding: 7px 0;
+		font: 400 1.4rem/3rem @font;
+		color: @color-fifth;
+        text-align: center;
+	}
+	&__number{
+	    display: inline-block;
+        vertical-align: top;
+	    text-align: center;
+        padding: 13px 0 14px;
+        width: 100%;
+		font: 400 1.8rem/3rem @font;   
+		color: @color-third;
+        border: 2px solid @color-gray;
+        border-right: none;
+	}
+}

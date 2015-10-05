@@ -1,0 +1,14 @@
+.show-review-slide(@r, @n, @i:1) when (@i =< @n) {
+    #@{r}btn-@{i}:checked ~ .@{r}slides .@{r}slide:nth-child(@{i}) {
+        display:block;
+    }
+    .show-review-slide(@r, @n, (@i + 1));
+} 
+.show-label(@r, @n, @i:1) when (@i =< @n) {
+    #@{r}btn-@{i}:checked ~ .@{r}controls .@{r}controls-label:nth-child(@{i}) {
+        border-color: @color-fourth;
+        background-color: @color-main;
+    }    
+    .show-label(@r, @n, (@i + 1));
+}
+
