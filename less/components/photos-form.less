@@ -1,0 +1,72 @@
+.photos-form {
+	background-color: @color-second;
+	&__upload {
+		padding: 29px 0 0 0;
+		text-align: center;
+	}
+	&__header {
+		font: 400 1.4rem/3rem @font;
+		color: @color-fifth;
+		text-transform: uppercase;
+	}
+	&__upload-btn {
+	
+	}
+	&__label {
+		display: block;
+		margin: 25px 0 33px;
+		padding: 15px 0 16px;
+		font: 700 1.8rem/3rem @font;
+        color: @color-third;
+		box-sizing: border-box;
+		border: 2px solid @color-gray;
+		border-radius: 3px;
+		background-color: @color-main;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	&__input-file {
+		display: none;
+	}
+	&__attached {
+		padding: 35px 0 6px 0;
+		border-top: 2px solid @color-gray;
+		font-size: 0;
+	}
+	&__item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 39px 20px 0;
+		text-align: left;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+	&__img-block {
+		margin: 0 0 8px 0;
+		width: 67px;
+		height: 67px;
+	}
+	&__img {
+	
+	}
+	&__name-photo {
+		font: 400 1.2rem/1.8rem @font;
+        color: @color-third;
+		text-transform: uppercase;
+	}
+	&__remove-photo {
+		position: absolute;
+		top: -17px;
+		right: -17px;
+		width: 34px;
+		height: 34px;
+		box-sizing: border-box;
+		border: 2px solid @color-gray;
+		border-radius: 50%;
+		background: @color-main url('../img/i/i-chest.png') no-repeat 50% 50%;
+		z-index: 100;
+		cursor: pointer;
+	}
+}

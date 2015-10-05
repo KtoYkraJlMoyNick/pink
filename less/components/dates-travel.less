@@ -1,0 +1,40 @@
+.dates-travel {
+	padding: 44px 0 45px;
+	text-align: center;
+	&__descr {
+		margin: 0 0 35px 0;
+		font: 400 1.4rem/3rem @font;
+		color: @color-fifth;
+		text-transform: uppercase;
+	}
+	&__item {
+        &--mod {
+            padding: 0 0 15px 0;
+        }
+	}
+	&__input-text {
+        display: block;
+        margin: 0px 0 7px 0;
+        padding: 14px 20px;
+        width: 100%;
+		font: 400 1.8rem/3rem @font;
+        color: @color-third;
+        box-sizing: border-box;
+        border: 2px solid @color-gray;
+        border-radius: 3px;
+        &--disabled {
+            background-color: @color-second;
+        }
+        &::-webkit-input-placeholder {
+           color: @color-third;
+        }
+	}
+	&__label {
+        display: block;
+        padding: 0 22px 0 22px;
+        box-sizing: border-box;
+		font: 400 1.4rem/3rem @font;
+        color: @color-fifth;
+        text-transform: uppercase;
+	}
+}

@@ -9,19 +9,22 @@
   </head>
   <body>
     <div class="mobile-main-page-wrap">
-        <header class="main-header clearfix">
-           <div class="container">
-                <a class="page-logo" href="#"></a>
-                <a class="main-header__nav-btn" href="#"></a>
+        <header class="main-header">
+            <input class="main-header__input" type="checkbox" id="main-header__nav" name="nav">
+            <div class="container">
+                <a class="page-logo" href="#"><img src="./img/i/i-page-logo.png" alt="pink"></a>
+                <label class="main-header__label" for="main-header__nav"></label>
             </div>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="#">информация</a></li>
-                    <li class="main-nav__item"><a href="#">блог</a></li>
-                    <li class="main-nav__item"><a href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a href="#">конкурс</a></li>
-                </ul>
-            </nav>
+              <div class="main-header__nav-wrap">
+            	  <nav class="main-nav">
+                	 <ul class="main-nav__list">
+                    	  <li class="main-nav__item"><a href="#">информация</a></li>
+                    	  <li class="main-nav__item"><a href="#">блог</a></li>
+                    	  <li class="main-nav__item"><a href="#">отзывы</a></li>
+                    	  <li class="main-nav__item"><a href="#">конкурс</a></li>
+                    </ul>
+            	  </nav>
+              </div>
         </header>
         <div class="content">
             <section class="ad-app">
@@ -73,13 +76,13 @@
             </section>
             <section class="sliders">
                 <div class="reviews-slider">
-                       <input class="reviews-slider__input" type="radio" id="review-btn-1" value="review-slide-1" name="toogle-review" checked>
-                       <input class="reviews-slider__input" type="radio" id="review-btn-2" value="review-slide-2" name="toogle-review">
-                       <input class="reviews-slider__input" type="radio" id="review-btn-3" value="review-slide-3" name="toogle-review">
+                       <input class="reviews-slider__input" type="radio" id="reviews-slider__btn-1" value="review-slide-1" name="toogle-review" checked>
+                       <input class="reviews-slider__input" type="radio" id="reviews-slider__btn-2" value="review-slide-2" name="toogle-review">
+                       <input class="reviews-slider__input" type="radio" id="reviews-slider__btn-3" value="review-slide-3" name="toogle-review">
                        <div class="reviews-slider__controls">
-                           <label class="reviews-slider__controls-label" for="review-btn-1"></label>
-                           <label class="reviews-slider__controls-label" for="review-btn-2"></label>
-                           <label class="reviews-slider__controls-label" for="review-btn-3"></label>
+                           <label class="reviews-slider__controls-label" for="reviews-slider__btn-1"></label>
+                           <label class="reviews-slider__controls-label" for="reviews-slider__btn-2"></label>
+                           <label class="reviews-slider__controls-label" for="reviews-slider__btn-3"></label>
                        </div>
                     <div class="reviews-slider__slides">
                         <div class="reviews-slider__slide">
@@ -104,13 +107,13 @@
 					<div class="reviews-slider__triangle"></div>
                 </div>
                 <div class="offers-slider">
-                    <input class="offers-slider__radio" type="radio" id="offer-btn-1" value="baza" name="toogle-offers">
-                    <input class="offers-slider__radio" type="radio" id="offer-btn-2" value="standart" name="toogle-offers" checked>
-                    <input class="offers-slider__radio" type="radio" id="offer-btn-3" value="unlim" name="toogle-offers">
+                    <input class="offers-slider__radio" type="radio" id="offers-slider__btn-1" value="baza" name="toogle-offers">
+                    <input class="offers-slider__radio" type="radio" id="offers-slider__btn-2" value="standart" name="toogle-offers" checked>
+                    <input class="offers-slider__radio" type="radio" id="offers-slider__btn-3" value="unlim" name="toogle-offers">
                     <div class="offers-slider__controls">
-                        <label class="offers-slider__controls-label" for="offer-btn-1"></label>
-                        <label class="offers-slider__controls-label" for="offer-btn-2"></label>
-                        <label class="offers-slider__controls-label" for="offer-btn-3"></label>
+                        <label class="offers-slider__controls-label" for="offers-slider__btn-1"></label>
+                        <label class="offers-slider__controls-label" for="offers-slider__btn-2"></label>
+                        <label class="offers-slider__controls-label" for="offers-slider__btn-3"></label>
                     </div>
                     <div class="offers-slider__slides">
                         <article class="offers-slider__slide">
@@ -139,7 +142,7 @@
                             </div>
                         </article>
                         <article class="offers-slider__slide">
-                            <div class="offers-slider__tariff">
+                            <div class="offers-slider__tariff offers-slider__tariff--mod">
                                 <div class="container">
                                     <h3 class="offers-slider__tariff-header">стандарт</h3>
                                     <span class="offers-slider__tariff-price">3,99 usd</span>

@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=320px">
     <title>Форма pink</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="mobile-form-page-wrap">
+    <div class="mobile-form-page-wrap"> 
         <header class="main-header">
-           <div class="container">
+            <input class="main-header__input" type="checkbox" id="main-header__nav" name="nav">
+            <div class="container">
                 <a class="page-logo" href="#"><img src="./img/i/i-page-logo.png" alt="pink"></a>
-                <a class="main-header__nav-btn" href="#"></a>
+                <label class="main-header__label" for="main-header__nav"></label>
             </div>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="#">информация</a></li>
-                    <li class="main-nav__item"><a href="#">блог</a></li>
-                    <li class="main-nav__item"><a href="#">отзывы</a></li>
-                    <li class="main-nav__item"><a href="#">конкурс</a></li>
-                </ul>
-            </nav>
+              <div class="main-header__nav-wrap">
+            	  <nav class="main-nav">
+                	 <ul class="main-nav__list">
+                    	  <li class="main-nav__item"><a href="#">информация</a></li>
+                    	  <li class="main-nav__item"><a href="#">блог</a></li>
+                    	  <li class="main-nav__item"><a href="#">отзывы</a></li>
+                    	  <li class="main-nav__item"><a href="#">конкурс</a></li>
+                    </ul>
+            	  </nav>
+              </div>
         </header>
         <div class="content">
             <div class="descr-page">
@@ -31,22 +36,22 @@
                 <form class="travel-form" enctype="multipart/form-data" action="/echo" method="post">
                     <div class="travel-form__descr">
                         <div class="container">
-                            <p class="travel-form__descr-title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+                            <p class="travel-form__descr-title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
                         </div>
                     </div>
                     <div class="initials">
                        <div class="container">
                             <div class="initials__unit">
-                                <label class="form-label" for="first-name">имя: *</label>
-                                <input class="form-input-text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
+                                <label class="initials__label" for="first-name">имя: *</label>
+                                <input class="initials__input-text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
                             </div>
                             <div class="initials__unit">
-                                <label class="form-label" for="last-name">фамилия: *</label>
-                                <input class="form-input-text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию" required>
+                                <label class="initials__label" for="last-name">фамилия: *</label>
+                                <input class="initials__input-text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию" required>
                             </div>
                             <div class="initials__unit">
-                                <label class="form-label" for="middle-name">отчество: *</label>
-                                <input class="form-input-text" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
+                                <label class="initials__label" for="middle-name">отчество:</label>
+                                <input class="initials__input-text" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже" required>
                             </div>
                         </div>
                     </div>
@@ -55,16 +60,16 @@
                             <p class="app-form__header">С каким приложением путешествовали? *</p>
                             <div class="app-form__units">
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="ios-btn">Pink для iOS</label>
-                                    <input class="muted-radio-btn" type="radio" id="ios-btn" name="app-btn" value="ios" checked>
+                                   <input class="app-form__radio-btn" type="radio" id="ios-btn" name="app-btn" value="ios" checked>
+                                    <label class="app-form__label" for="ios-btn"><span></span>Pink для iOS</label>  
                                 </div>
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="android-btn">Pink на Android</label>
-                                    <input class="muted-radio-btn" type="radio" id="android-btn" name="app-btn" value="android">
+                                    <input class="app-form__radio-btn" type="radio" id="android-btn" name="app-btn" value="android">
+                                    <label class="app-form__label" for="android-btn"><span></span>Pink на Android</label>
                                 </div>
                                 <div class="app-form__unit">
-                                    <label class="app-form__label" for="windows-btn">Windows Phone</label>
-                                    <input class="muted-radio-btn" type="radio" id="windows-btn" name="app-btn" value="windows">
+                                    <input class="app-form__radio-btn" type="radio" id="windows-btn" name="app-btn" value="windows">
+                                    <label class="app-form__label" for="windows-btn"><span></span>Windows Phone</label>
                                 </div>
                             </div>
                         </div>
@@ -73,66 +78,62 @@
                         <div class="container">
                             <p class="dates-travel__descr">когда вы путешествовали? *</p>
                             <div class="dates-travel__item">
-                                <input class="form-input-text" type="text" id="out-date" name="out-date" placeholder="1 апреля 2015" required>
-                                <label class="form-label" for="out-date">дата выезда</label>
+                                <input class="dates-travel__input-text" type="text" id="out-date" name="out-date" placeholder="1 апреля 2015" required>
+                                <label class="dates-travel__label" for="out-date">дата выезда</label>
                             </div>
-                            <div class="dates-travel__item">
-                               <div class="form-custom-input">
-                                	<button class="form-custom-input__btn-aggr  form-custom-input__btn-aggr--minus" type="button"></button>
-                                	<input class="form-custom-input__input-text" type="text" id="duration-travel" name="duration-travel" placeholder="10 дней" required>
-                                	<button class="form-custom-input__btn-aggr form-custom-input__btn-aggr--plus" type="button"></button>
+                            <div class="dates-travel__item dates-travel__item--mod">
+                               <div class="custom-input">
+                                	<button class="custom-input__btn-minus" type="button"></button>
+                                	<input class="custom-input__input-text" type="text" id="duration-travel" name="duration-travel" placeholder="10 дней" required>
+                                	<button class="custom-input__btn-plus" type="button"></button>
                                 </div>
-                                <label class="form-label" for="duration-travel">продолжительность</label>
+                                <label class="dates-travel__label" for="duration-travel">продолжительность</label>
                             </div>
                             <div class="dates-travel__item">
-                                <input class="form-input-text  form-input-text--disabled" type="text" id="in-date" name="in-date" placeholder="1 апреля 2015" disabled>
-                                <label class="form-label" for="in-date">дата возвращения</label>
+                                <input class="dates-travel__input-text  dates-travel__input-text--disabled" type="text" id="in-date" name="in-date" placeholder="1 апреля 2015" disabled>
+                                <label class="dates-travel__label" for="in-date">дата возвращения</label>
                             </div>
                         </div>
                     </div>
                     <div class="partners">
                         <div class="container">
                             <div class="partners__quantity">
-                                <label class="form-label" for="quantity-prt">количество попутчиков *</label>
-                                <div class="form-custom-input">
-                                    <button class="form-custom-input__btn-aggr form-custom-input__btn-aggr--minus" type="button"></button>
-                                    <input class="form-custom-input__input-text  form-custom-input__input-text--disabled" type="text" id="quantity-prt" name="quantity-prt" placeholder="2 чел" required>
-                                    <button class="form-custom-input__btn-aggr  form-custom-input__btn-aggr--plus" type="button"></button>
+                                <label class="partners__label" for="quantity-prt">количество попутчиков *</label>
+                                <div class="custom-input custom-input--mod">
+                                    <button class="custom-input__btn-minus" type="button"></button>
+                                    <input class="custom-input__input-text  custom-input__input-text--mod" type="text" id="quantity-prt" name="quantity-prt" placeholder="2 чел" required>
+                                    <button class="custom-input__btn-plus" type="button"></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="partners__data">
+                        <div class="partners__info">
                             <div class="container">
-                                <div class="partners__item">
+                                <div class="partners__item clearfix">
                                     <div class="partners__title">
                                         <span class="partners__symbols-number">№</span>
-                                        <label class="form-label" for="first-name-partner-1">имя: *</label>
-                                    </div>
-                                    <div class="partners__data">
                                         <div class="partners__number">1</div>
-                                        <input class="form-input-text" type="text" id="first-name-partner-1" name="first-name-partner-1" placeholder="Введите ваше имя" required>
-                                    </div>
-                                    <div class="partners__title">
-                                        <label class="form-label" for="nickname-partner-1">прозвище:</label>
                                     </div>
                                     <div class="partners__data">
-                                        <input class="form-input-text" type="text" id="nickname-partner-1" name="nickname-partner-1" placeholder="Ну как же без этого!">
+                                        <label class="partners__label partners__label--mod" for="first-name-partner-1">имя: *</label>
+                                        <input class="partners__input-text" type="text" id="first-name-partner-1" name="first-name-partner-1" placeholder="Введите ваше имя" required>
+                                    </div>
+                                    <div class="partners__data partners__data--mod">
+                                        <label class="partners__label partners__label--mod" for="nickname-partner-1">прозвище:</label>
+                                        <input class="partners__input-text partners__input-text--mod" type="text" id="nickname-partner-1" name="nickname-partner-1" placeholder="Ну как же без этого!">
                                     </div>
                                 </div>
-                                <div class="partners__item">
+                                <div class="partners__item clearfix">
                                     <div class="partners__title">
                                         <span class="partners__symbols-number">№</span>
-                                        <label class="form-label" for="first-name-partner-2">имя: *</label>
-                                    </div>
-                                    <div class="partners__data">
                                         <div class="partners__number">2</div>
-                                        <input class="form-input-text" type="text" id="first-name-partner-2" name="first-name-partner-2" placeholder="Введите ваше имя" required>
-                                    </div>
-                                    <div class="partners__title">
-                                        <label class="form-label" for="nickname-partner-2">прозвище:</label>
                                     </div>
                                     <div class="partners__data">
-                                        <input class="form-input-text" type="text" id="nickname-partner-2" name="nickname-partner-2" placeholder="Ну как же без этого!">
+                                        <label class="partners__label partners__label--mod" for="first-name-partner-2">имя: *</label>
+                                        <input class="partners__input-text" type="text" id="first-name-partner-2" name="first-name-partner-2" placeholder="Введите ваше имя" required>
+                                    </div>
+                                    <div class="partners__data partners__data--mod">
+                                        <label class="partners__label partners__label--mod" for="nickname-partner-2">прозвище:</label>
+                                        <input class="partners__input-text" type="text" id="nickname-partner-2" name="nickname-partner-2" placeholder="Ну как же без этого!">
                                     </div>
                                 </div>
                             </div>
@@ -140,31 +141,31 @@
                     </div>
                     <div class="events-travel">
                         <div class="container">
-                            <p class="events-travel__header">Ваши безбашенные<br>достижения в путешествии</p>
+                            <h3 class="events-travel__header">Ваши безбашенные<br>достижения в путешествии</h3>
                             <div class="events-travel__block">
                                 <div class="events-travel__unit">
-                                    <input class="muted-checkbox" type="checkbox" id="event-field-1" name="event-field-1" checked>
-                                    <label class="events-travel__label" for="event-field-1">Сделал селфи с акулой</label>
+                                    <input class="events-travel__checkbox" type="checkbox" id="event-field-1" name="event-field-1" checked>
+                                    <label class="events-travel__label" for="event-field-1"><span></span>Сделал селфи с акулой</label>
                                 </div>
                                 <div class="events-travel__unit">
-                                    <input class="muted-checkbox" type="checkbox" id="event-field-2" name="event-field-2" checked>
-                                    <label class="events-travel__label" for="event-field-2">Обгорел на пляже</label>
+                                    <input class="events-travel__checkbox" type="checkbox" id="event-field-2" name="event-field-2" checked>
+                                    <label class="events-travel__label" for="event-field-2"><span></span>Обгорел на пляже</label>
                                 </div>
                                 <div class="events-travel__unit">
-                                    <input class="muted-checkbox" type="checkbox" id="event-field-3" name="event-field-3">
-                                    <label class="events-travel__label" for="event-field-3">Видел Чака Норриса</label>
+                                    <input class="events-travel__checkbox" type="checkbox" id="event-field-3" name="event-field-3">
+                                    <label class="events-travel__label" for="event-field-3"><span></span>Видел Чака Норриса</label>
                                 </div>
                                 <div class="events-travel__unit">
-                                    <input class="muted-checkbox" type="checkbox" id="event-field-4" name="event-field-4">
-                                    <label class="events-travel__label" for="event-field-4">Накупил сувениров</label>
+                                    <input class="events-travel__checkbox" type="checkbox" id="event-field-4" name="event-field-4">
+                                    <label class="events-travel__label" for="event-field-4"><span></span>Накупил сувениров</label>
                                 </div>
                                 <div class="events-travel__unit">
-                                    <input class="muted-checkbox" type="checkbox" id="event-field-5" name="event-field-5" checked>
-                                    <label class="events-travel__label" for="event-field-5">Удержал башню</label>
+                                    <input class="events-travel__checkbox" type="checkbox" id="event-field-5" name="event-field-5" checked>
+                                    <label class="events-travel__label" for="event-field-5"><span></span>Удержал башню</label>
                                 </div>
                                 <div class="events-travel__unit">
-                                    <input class="muted-checkbox" type="checkbox" id="event-field-6" name="event-field-6">
-                                    <label class="events-travel__label" for="event-field-6">Разгромил отель</label>
+                                    <input class="events-travel__checkbox" type="checkbox" id="event-field-6" name="event-field-6">
+                                    <label class="events-travel__label" for="event-field-6"><span></span>Разгромил отель</label>
                                 </div>
                             </div>  
                         </div>
@@ -172,65 +173,85 @@
                     <div class="photos-form">
                         <div class="container">
                             <div class="photos-form__upload">
-                                <p class="photos-form__header">ваши фотографии из поездки *</p>
+                                <h3 class="photos-form__header">ваши фотографии из поездки *</h3>
                                 <div class="photos-form__upload-btn">
                                     <label class="photos-form__label" for="file-upload">загрузить фото</label>
-                                    <input class="muted-input" type="file" id="file-upload" name="file-upload" required>
+                                    <input class="photos-form__input-file" type="file" id="file-upload" name="file-upload" required>
                                 </div>
                             </div>
                             <div class="photos-form__attached">
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-1.jpg">
+                                   <div class="photos-form__img-block">
+                                   	  <img class="photos-form__img" src="./img/p/p-upload-img-1.jpg" width="67" height="67"  alt="img-1.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-1.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-2.jpg">
+                                   <div class="photos-form__img-block">
+                                    	<img class="photos-form__img" src="./img/p/p-upload-img-2.jpg" width="67" height="67"  alt="img-2.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-2.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-3.jpg">
+                                   <div class="photos-form__img-block">
+                                   	 <img class="photos-form__img" src="./img/p/p-upload-img-3.jpg" width="67" height="67"  alt="img-3.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-3.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-4.jpg">
+                                   <div class="photos-form__img-block">
+                                    	<img class="photos-form__img" src="./img/p/p-upload-img-4.jpg" width="67" height="67"  alt="img-4.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-4.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-5.jpg">
+                                   <div class="photos-form__img-block">
+                                    	<img class="photos-form__img" src="./img/p/p-upload-img-5.jpg" width="67" height="67"  alt="img-5.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-5.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-6.jpg">
+                                   <div class="photos-form__img-block">
+                                    	<img class="photos-form__img" src="./img/p/p-upload-img-6.jpg" width="67" height="67"  alt="img-6.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-6.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-7.jpg">
+                                   <div class="photos-form__img-block">
+                                    	<img class="photos-form__img" src="./img/p/p-upload-img-7.jpg" width="67" height="67"  alt="img-7.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-7.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                                 <div class="photos-form__item">
-                                    <img class="photos-form__img" src="/" alt="img-8.jpg">
+                                   <div class="photos-form__img-block">
+                                    	<img class="photos-form__img" src="./img/p/p-upload-img-8.jpg" width="67" height="67"  alt="img-8.jpg">
+                                    </div>
                                     <span class="photos-form__name-photo">img-8.jpg</span>
                                     <div class="photos-form__remove-photo"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <input class="travel-form__submit" type="submit" name="send-form" value="отправить форму">
-                    <span class="travel-form__required-field"><span class="red-star">*</span> &mdash; обязательные поля</span>
+                    <div class="travel-form__send">
+                        <div class="container">
+                            <input class="travel-form__submit" type="submit" name="send-form" value="отправить форму">
+                            <span class="travel-form__required-field"><span>*</span> &mdash; обязательные поля</span>
+                        </div>
+                    </div>
                 </form>
             </div>
             <footer class="footer-form">
                <div class="container">
                     <div class="logo">
-                        <img class="logo__img" src="/" alt="glasses">
-                        <span class="logo__title">pink</span>
+                        <img class="logo__glasses" src="./img/i/i-glasses.png" width="59" height="40" alt="glasses">
+                        <img class="logo__title" src="./img/i/i-footer-logo.png" width="74" height="23" alt="logo">
                     </div>
                     <div class="media-btn">
                         <a class="media-btn__link media-btn__link--twit" href="#"></a>
@@ -239,25 +260,37 @@
                     </div>
                     <div class="developed-info">
                         <span class="developed-info__descr">Разработано</span>
-                        <img class="developed-info__logo" src="/" alt="logo-academy">
+                        <a class="developed-info__logo" href="#"></a>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
     <div class="modal-content">
-	    <div class="container">
-		    <h3 class="modal-content__header">Что-то пошло не так!</h3>
-		    <p class="modal-content__descr">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-		    <a class="modal-content__link" href="#">ок</a>
-	    </div>
+    	<div class="modal-content__title-box">
+	    	<div class="container">
+		    	<h3 class="modal-content__header">Что-то пошло не так!</h3>
+		    	<p class="modal-content__descr">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+	    	</div>
+		</div>
+	    <div class="modal-content__btn-box">   
+	    	<div class="container">
+		    	<a class="modal-content__link" href="#">ок</a>
+		    </div>	
+		</div>     
     </div>
     <div class="modal-content">
-	    <div class="container">
-		    <h3 class="modal-content__header">Ваша заявка отправлена</h3>
-		    <p class="modal-content__descr">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br>оповестим вас.</p>
-		    <a class="modal-content__link" href="#">закрыть окно</a>
-	    </div>
+    	<div class="modal-content__title-box">
+	    	<div class="container">
+		    	<h3 class="modal-content__header">Ваша заявка отправлена</h3>
+		    	<p class="modal-content__descr">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br>оповестим вас.</p>
+		    </div>
+		</div>
+	    <div class="modal-content__btn-box modal-content__btn-box--mod">   
+	    	<div class="container">
+		    	<a class="modal-content__link" href="#">закрыть окно</a>
+	    	</div>
+		</div>
     </div>        
 </body>
 </html>
