@@ -28,6 +28,7 @@
     &__download {
         padding: 27px 0 30px;
         background-color: @color-third;
+        box-sizing: border-box;
     }
     &__download-link {
         display: block;
@@ -119,47 +120,44 @@
 		
 		} 
 	@media (min-width: 1200px) {
-		position: relative;
-		& .container {
-			width: 320px;
-		}
+		    position: relative;
+		    & .container {
+			    width: 300px;
+		    }
 			&__intro {
-				padding: 200px 0 0;
-       			height: 729px;
-        		background-image:  url('../img/p/p-bg-intro-tablet@1x.jpg');
-				background-position: 50% 50%;
+				padding: 214px 0 0;
+       			height: 853px;
+        		background-image:  url('../img/p/p-bg-intro-desktop.jpg');
+                background-size: cover;
     		}
     		&__descr {
         		display: inline-block;
-        		margin: 0 0 0 90px;
-				width: 200px;
-				font: 300 4rem/5.4rem @font;
-        		opacity: 1;
+        		margin: 0 0 0 155px;
+				width: 250px;
+				font: 300 5rem/6.6rem @font;
     		}
     		&__download {
         		position: absolute;
-				top: 378px;
-				left: 30px;
-				padding: 0;
-       			background-color: transparent;
+				top: 450px;
+				left: 130px;
     		}
     		&__download-link {
-				margin: 0 auto 45px;
-				width: 282px;
-        
+				margin: 0 auto 66px;
+		        font: 700 2.1rem/2.1rem @font;
+                width: 100%;
+                box-sizing: border-box;
     		}
    			&__img-systems {
-        		margin-bottom: 40px;
-    		}
-    		&__systems-descr{
-				font: 300 1.8rem/2.4rem @font;
+        		margin-bottom: 60px;
     		}
     		&__smartphone{
-        		top: 184px;
-        		bottom: auto;
-				width: 700px;
-				height: 545px;
-				background-image: url('../img/p/p-iphone-hand-tablet@1x.png');
+        		top: auto;
+        		bottom: 0;
+                right: 0;
+                left: auto;
+				width: 1050px;
+				height: 645px;
+				background-image: url('../img/p/p-iphone-hand-desktop@1x.png');
     		}
 	} 
 }
