@@ -38,6 +38,7 @@
         padding-top: 55px;
     }
     &__sample {
+        margin: 0 0 35px;
         text-align: center;
     }
     &__sample-header {
@@ -46,7 +47,6 @@
         color: @color-h3;
     }
     &__sample-descr {
-        margin: 0 0 35px;
 		font: 400 1.4rem/2.4rem @font;
         color: @color-fourth;
     }
@@ -80,7 +80,7 @@
             padding: 53px 0 87px;
         }
     &__title-unit {
-		font: 300 4rem/4rem @font;
+		font: 300 4rem/5.3rem @font;
         &:first-child {
             margin-bottom: 0px;
         }
@@ -92,7 +92,7 @@
     &__samples {
         position: relative;
         margin: 0 0 0 350px;
-        padding-top: 17px;
+        padding-top: 20px;
         width: 310px;
         & .container {
             width: 100%;
@@ -102,7 +102,7 @@
             text-align: left;
         }
         &__sample-header {
-        margin: 0 0 14px;
+        margin: 0 0 13px;
         }
         &__sample-descr {
             margin: 0 0 35px;
@@ -114,13 +114,15 @@
 	    }
         &__effect-block {
             display: block;
+			padding: 57px 0 0;
             font-size: 0;
             background-color: @color-main;
         }
         &__time-effect {
             display: inline-block;
             vertical-align: top;
-            width: 310px;
+			margin: 0 48px 0 0;
+            width: 262px;
             text-align: center;
         }
         &__time-icon {
@@ -137,11 +139,12 @@
         &__about-effect {
             display: inline-block;
             vertical-align: top;
+			padding: 48px 0 0;
             width: 310px;
         }
         
         &__effect-header {
-            margin: 0 0 15px;
+            margin: 0 0 18px;
             font: 700 3rem/3.6rem @font;
             color: @color-h3;
             span {
@@ -149,7 +152,7 @@
             }
         }
         &__effect-descr {
-            margin: 0 0 12px;
+            margin: 0 0 15px;
             padding: 0 10px 0 0;
 		    font: 400 1.4rem/2.4rem @font;
             color: @color-fourth;
@@ -163,6 +166,125 @@
         }
     }
     @media (min-width: 1200px) {
+        background-color: @color-second;
+        &__img-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+            left: 42px;
+            bottom: auto; 
+			top: -363px;
+			width: 956px;
+        }
+		&__img-smartphone-1{
+			display: inline-block;
+			vertical-align: top;
+            width: 292px;
+            height: 302px;
+            background: transparent url('../img/p/p-iphone-screen-desktop-1@1x.png') no-repeat 50% 50%;
+         }
+		&__img-smartphone-2{
+			display: inline-block;
+			vertical-align: top;
+            width: 292px;
+            height: 302px;
+            background: transparent url('../img/p/p-iphone-screen-desktop-2@1x.png') no-repeat 50% 50%;
+         }
+        &__img-smartphone-3{
+			display: inline-block;
+			vertical-align: top;
+            width: 292px;
+            height: 302px;
+            background: transparent url('../img/p/p-iphone-screen-desktop-3@1x .png') no-repeat 50% 50%;
+         }
+        &__title {
+		    position: relative;
+			margin: 0 0 265px;
+            padding: 79px 0 183px;
+        }
+    &__title-unit {
+		font: 300 5rem/6.6rem @font;
+        &:first-child {
+            margin-bottom: 0px;
+        }
+        &:last-child {
+            margin: 0 auto;
+            width: 450px;
+        }
+    }
+    &__samples {
+		margin: 0 auto;
+        padding: 0;
+        width: 871px;
+		font-size: 0;
+        & .container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+        		}
+          }
+        &__sample {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+            text-align: center;
+			width: 222px;
+        }
+        &__sample-header {
+			font: 700 3rem/3rem @font;
+        	margin: 0 0 33px;
+        }
+        &__sample-descr {
+			font: 400 1.8rem/3rem @font;
+            margin: 0;
+        }
+	    &__triangle {
+		    height: 92px;
+	    }
+        &__effect-block {
+			padding: 80px 0 67px;
+            background-color: @color-second;
+        }
+        &__time-effect {
+            width: 300px;
+        }
+        &__time-icon {
+            display: block;
+            width: 216px;
+            height: 216px;
+            font: 700 10.5rem/18.1rem @font;
+            color: @color-fifth;
+            box-sizing: border-box;
+            border: 11px solid @color-fifth;
+            border-radius: 50%;
+        
+        }
+        &__about-effect {
+            display: inline-block;
+            vertical-align: top;
+			margin: 0 0 0 66px;
+			padding: 104px 0 0;
+            width: 523px;
+        }
+        
+        &__effect-header {
+            margin: 0 0 33px;
+            font: 700 3rem/3rem @font;
+            span {
+                display: inline;
+            }
+        }
+        &__effect-descr {
+            margin: 0 0 38px;
+		    font: 400 1.8rem/3rem @font;
+            span {
+                display: inline;
+            }
+        }
+        &__effect-link {
+		    font: 400 1.8rem/3rem @font;
+        }
     
     }
 }

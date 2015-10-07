@@ -39,9 +39,14 @@
     &__slide {
         display: inline-block;
         vertical-align: top;
+		width: 284px;
         border: 2px solid @color-gray;
         border-top: none;
-        &:nth-child(2) {
+		box-sizing: border-box;
+		&:nth-child(1) {
+			display: none;
+		}
+        &:nth-child(3) {
             border: none;
             border-bottom: 2px solid @color-gray;
         }
@@ -74,15 +79,32 @@
     }
     &__edge-tariff {
     }
-    &__list {
-    
-    }
     &__list-item {
         position: relative;
         border-bottom: 2px solid @color-gray;
         &:last-child {
             border-bottom: none;
         }
+		&--yes:after {
+			content: "";
+        	position: absolute;
+        	right: 18px;
+        	top: 50%;
+        	margin-top: -11px;
+        	width: 29px;
+        	height: 22px;
+        	background: transparent url('../img/i/i-yes.png') no-repeat 0 0;	
+		}
+		&--no:after {
+			content: "";
+        	position: absolute;
+        	right: 19px;
+        	top: 50%;
+        	margin-top: -13px;
+        	width: 26px;
+        	height: 26px;
+        	background: transparent url('../img/i/i-no.png') no-repeat 0 0; 
+			}
     }
     &__title-edge {
         margin:0 55px 0 22px;
@@ -91,24 +113,6 @@
         color: @color-fourth;
         text-transform: uppercase;
     	overflow: hidden;
-    }
-    &__track-yes {
-        position: absolute;
-        right: 18px;
-        top: 50%;
-        margin-top: -11px;
-        width: 29px;
-        height: 22px;
-        background: transparent url('../img/i/i-yes.png') no-repeat 0 0;
-    }
-    &__track-no {
-        position: absolute;
-        right: 19px;
-        top: 50%;
-        margin-top: -13px;
-        width: 26px;
-        height: 26px;
-        background: transparent url('../img/i/i-no.png') no-repeat 0 0; 
     }
     #offers-slider__btn-1:checked  ~ .offers-slider__slides {
         left: 0;
@@ -120,4 +124,117 @@
          right: 0;
      }
     .show-label(offers-slider__, 3);
+	
+	@media (min-width: 700px) {
+    	height: auto;
+    	&__controls { 
+        	display: none;
+   		 }
+    	&__slides {
+			position: static;
+			margin: 35px auto 68px;
+			width: 620px;
+			background-color: @color-second;
+    	}
+    	&__slide {
+			width: 155px;
+			background-color: @color-main;
+        	&:nth-child(1) {
+				display: inline-block;
+            	vertical-align: bottom;
+        		border: 2px solid @color-gray;
+				border-right: none;
+        	}
+    	}
+    	&__tariff {
+        	padding: 14px 0 10px;
+        	&--mod:after {   
+            	top: 0;
+            	left: 0;
+            	width: 61px;
+            	height: 61px;
+            	background: transparent url('../img/i/i-label-hit-tablet.png') no-repeat 0 0;
+        	}
+			&--border {
+				border-left: 2px solid @color-fourth;	
+			}
+			&--blank {
+				display: none;
+			}
+    	}
+    	&__tariff-header {
+			font: 700 1.6rem/3rem @font;
+    	}
+    	&__tariff-price {
+			font: 300 1.8rem/3rem @font;
+    	}
+    	&__list-item {
+       		position: relative;
+        	border-bottom: 2px solid @color-gray;
+        &:last-child {
+            border-bottom: none;
+        }
+		&--yes:after {
+			left: 50%;
+        	right: auto;
+        	top: 50%;
+        	margin: -11px 0 0 -14px;
+		}
+		&--no:after {
+			left: 50%;
+        	right: auto;
+        	top: 50%;
+        	margin: -13px 0;
+        	width: 26px;
+        	height: 26px;
+        	background: transparent url('../img/i/i-no.png') no-repeat 0 0; 
+			}
+    }
+    	&__title-edge {
+			opacity: 0;
+        	margin:0 0 0 15px;
+        	padding: 11px 0 9px;
+			font: 400 1.4rem/3rem @font;
+        	text-transform: none;
+			&--mod {
+				opacity: 1;
+			}
+    }
+}
+	@media (min-width: 1200px) {
+    	&__slides {
+			margin: 61px auto 95px;
+			width: 940px;
+    	}
+    	&__slide {
+			width: 235px;
+    	}
+    	&__tariff {
+        	padding: 19px 0 22px;
+        	&--mod:after {   
+            	width: 74px;
+            	height: 73px;
+            	background: transparent url('../img/i/i-label-hit.png') no-repeat 0 0;
+        	}
+    	}
+    	&__tariff-header {
+			font: 700 1.8rem/3rem @font;
+    	}
+    	&__tariff-price {
+			font: 300 2.4rem/3rem @font;
+    	}
+    	&__list-item {
+			&--yes:after {
+				
+			}
+			&--no:after { 
+				
+				}
+    	}
+    	&__title-edge {
+        	margin:0 0 0 24px;
+        	padding: 20px 0 16px;
+			font: 400 1.8rem/3rem @font;
+    	}
+	}
 }
