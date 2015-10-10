@@ -1,13 +1,23 @@
-.partners {
-	padding: 31px 0 29px 0;
+.partners { 
+	padding: 30px 0 27px 0;
 	background-color: @color-second;
 	text-align: center;
+    &__wrap {
+        margin: 0 auto;
+        width: 280px;
+    }
+&__descr {
+        font: 400 1.4rem/3rem @font;
+        color: @color-fifth;
+        text-transform: uppercase;
+    }
 	&__quantity {
         padding: 0 0 31px 0;
 	}
 	&__label {
         display: inline-block;
         vertical-align: top;
+        padding: 8px 0 6px 24px;
 		font: 400 1.4rem/3rem @font;
 		color: @color-fifth;
 		text-transform: uppercase;
@@ -35,11 +45,14 @@
         display: inline-block;
         vertical-align: top;
         width: 221px;
-        &--mod {
-            float: right;
-            margin: 8px 0 23px 0;
+        &--flt {
+            float: right;           
+            margin: 9px 0 23px 0;
         }
 	}
+    &__btn-remove {
+        display: none;
+    }
     &__info {
         font-size: 0;
     }
@@ -58,7 +71,7 @@
 	}
 	&__symbols-number {
 	    display: block;
-        padding: 7px 0;
+        padding: 8px 0 6px 3px;
 		font: 400 1.4rem/3rem @font;
 		color: @color-fifth;
         text-align: center;
@@ -74,4 +87,138 @@
         border: 2px solid @color-gray;
         border-right: none;
 	}
+    @media (min-width: 700px){
+        position: relative;
+        padding: 20px 0 29px 0;
+        background-color: @color-main;
+        &__wrap {
+            width: 620px;
+            border: 2px solid @color-gray;
+        }
+        &__descr {
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            padding: 0 27px;
+            transform: translateX(-50%);
+            background-color: @color-main;
+        }
+        &__quantity {
+            padding: 15px 0 15px 61px;
+            text-align: left;
+        }
+        &__label {
+            padding: 7px 0 6px 23px;
+        }
+        &__input-text {
+            padding: 13px 0 15px 20px;
+            width: 100%;
+            border-radius: 3px;
+            &::-webkit-input-placeholder {
+                
+            }
+            &--mod {
+                
+            }
+        }
+        &__data {
+            width: 300px;
+            &--mod {
+                float: none;
+                margin: 9px 0 0 85px;
+            }
+        }
+        &__btn-remove {
+            display: inline-block;
+            vertical-align: top;
+            margin: 66px 0 0 54px;
+            font: 400 1.4rem/3rem @color-fourth;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            background-color: @color-main;
+            cursor: pointer;
+        }
+        &__info {
+            margin: 0 58px;
+        }
+        &__item {
+            margin: 0 auto 54px;
+            text-align: left;
+            &:first-child {
+                margin: 0 0 24px;
+                padding: 21px 0 7px ;
+                border-top: 2px solid @color-gray;
+            }
+        }
+        &__title {
+            margin: 0 24px 0 0;
+            width: 60px;
+        }
+        &__symbols-number {
+            padding: 7px 0 6px 5px;
+        }
+        &__number{
+            padding: 13px 0 15px 2px;
+            border: 2px solid @color-gray;
+            background-color: @color-second;
+            border-radius: 3px;
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 45px 0 29px 0;
+        &__wrap {
+            width: 940px;
+        }
+        &__descr {
+            top: 29px;
+        }
+        &__quantity {
+            padding: 15px 0 15px 61px;
+            text-align: left;
+        }
+        &__label {
+            padding: 7px 0 6px 23px;
+        }
+        &__input-text {
+            padding: 13px 0 15px 20px;
+            width: 100%;
+            border-radius: 3px;
+            &::-webkit-input-placeholder {
+                
+            }
+            &--mod {
+                
+            }
+        }
+        &__data {
+            margin: 0 20px 0 0;
+            &--mod {
+                margin: 0;
+            }
+        }
+        &__btn-remove {
+            margin: 40px 0 0 54px;
+            order: 5;
+        }
+        &__info {
+            
+        }
+        &__item {
+            display: flex;
+            margin: 0 auto 58px;
+            &:first-child {
+                margin: 0 0 6px;
+            }
+        }
+        &__title {
+            
+        }
+        &__symbols-number {
+            
+        }
+        &__number{
+            
+        }
+    }
 }

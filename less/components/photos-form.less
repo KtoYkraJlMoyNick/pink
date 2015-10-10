@@ -1,5 +1,9 @@
 .photos-form {
 	background-color: @color-second;
+    &__wrap {
+        margin: 0 auto;
+        width: 280px;
+    }
 	&__upload {
 		padding: 29px 0 0 0;
 		text-align: center;
@@ -14,7 +18,7 @@
 	}
 	&__label {
 		display: block;
-		margin: 25px 0 33px;
+		margin: 27px 0 33px;
 		padding: 15px 0 16px;
 		font: 700 1.8rem/3rem @font;
         color: @color-third;
@@ -47,9 +51,30 @@
 		margin: 0 0 8px 0;
 		width: 67px;
 		height: 67px;
-	}
-	&__img {
-	
+        &--img1 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat 0 0;
+        }
+        &--img2 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -67px 0;
+        }
+        &--img3 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -135px 0;
+        }
+        &--img4 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -202px 0;
+        }
+        &--img5 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -269px 0;
+        }
+        &--img6 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -337px 0;
+        }
+        &--img7 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -404px 0;
+        }
+        &--img8 {
+            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -472px 0;
+        }
 	}
 	&__name-photo {
 		font: 400 1.2rem/1.8rem @font;
@@ -69,4 +94,155 @@
 		z-index: 100;
 		cursor: pointer;
 	}
+    @media (min-width: 700px) {
+        position: relative;
+        padding: 66px 0 0;
+        background-color: @color-main;
+        &__wrap {
+            width: 620px;
+            box-sizing: border-box;
+            border: 2px solid @color-gray;
+        }
+        &__upload {
+            padding: 14px 58px 7px;
+        }
+        &__header {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            padding: 0 27px;
+            transform: translateX(-50%);
+            background-color: @color-main;
+        }
+        &__upload-btn {
+
+        }
+        &__label {
+            
+        }
+        &__input-file {
+            display: none;
+        }
+        &__attached {
+            margin: 0 58px;
+            padding: 50px 0 42px 0;
+        }
+        &__item {
+            margin: 49px 70px 0 0;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            &--mod {
+                margin: 16px 70px 0 0;
+            }
+        }
+        &__img-block {
+            width: 120px;
+            height: 120px;
+            &--img1 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat 0 0;
+            }
+            &--img2 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -120px 0;
+            }
+            &--img3 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -240px 0;
+            }
+            &--img4 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -360px 0;
+            }
+            &--img5 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -480px 0;
+            }
+            &--img6 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -600px 0;
+            }
+            &--img7 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -720px 0;
+            }
+            &--img8 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -840px 0;
+            }
+        }
+        &__name-photo {
+            font: 400 1.4rem/2.5rem @font;
+        }
+        &__remove-photo {
+            top: -28px;
+            right: -28px;
+            width: 56px;
+            height: 56px;
+            background: @color-main url('../img/i/i-chest-big.png') no-repeat 50% 50%;
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 65px 0 0;
+        &__wrap {
+            width: 940px;
+        }
+        &__upload {
+            padding: 14px 58px 7px;
+        }
+        &__header {
+            top: 50px;
+        }
+        &__upload-btn {
+
+        }
+        &__label {
+		    margin: 26px 0 33px;  
+            color: @color-main;
+            background-color: @color-fifth;
+        }
+        &__input-file {
+            
+        }
+        &__attached {
+            margin: 0 58px;
+            padding: 65px 0 28px 0;
+        }
+        &__item {
+            margin: 0 55px 26px 0;
+            &:nth-child(3n) {
+                margin-right: 55px;
+            }
+            &:nth-child(5n) {
+                margin-right: 0;
+            }
+            &--mod {
+                margin: 0 55px 26px 0;
+            }
+        }
+        &__img-block {
+            margin: 0 0 9px 0;
+            &--img1 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat 0 0;
+            }
+            &--img2 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -120px 0;
+            }
+            &--img3 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -240px 0;
+            }
+            &--img4 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -360px 0;
+            }
+            &--img5 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -480px 0;
+            }
+            &--img6 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -600px 0;
+            }
+            &--img7 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -720px 0;
+            }
+            &--img8 {
+                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -840px 0;
+            }
+        }
+        &__name-photo {
+        }
+        &__remove-photo {
+        }
+    }
 }
