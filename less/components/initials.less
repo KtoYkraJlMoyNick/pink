@@ -18,12 +18,19 @@
         width: 100%;
 		font: 400 1.8rem/3rem @font;
         color: @color-third;
+		outline: none;
         box-sizing: border-box;
         border: 2px solid @color-gray;
         border-radius: 3px;
         &::-webkit-input-placeholder {
            color: @color-third;
         }
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:focus {
+			border-color: @color-fifth;
+		}
     }
     @media (min-width: 700px) {
         padding: 0 0 2px 0;

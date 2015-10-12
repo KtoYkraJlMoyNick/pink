@@ -40,6 +40,13 @@
         text-align: center;
         border: 3px solid @color-main;
         border-radius: 27px;
+		&:hover {
+			color: @color-fifth;
+			background-color: @color-main;
+		}
+		&:active {
+			color: lighten(@color-fifth, 30%);
+		}
     }
     &__systems {
     

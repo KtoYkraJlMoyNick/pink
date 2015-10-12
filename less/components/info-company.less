@@ -21,6 +21,19 @@
 		font: 300 2.4rem/2.6rem @font;
         color: @color-fifth;
     }
+	&__mailto-link {
+		font: 300 2.4rem/2.6rem @font;
+        color: @color-fifth;
+		text-decoration: none;
+		&:hover {
+			color: @color-fourth;
+			text-decoration: underline;
+		}
+		&:active {
+			opacity: .3;
+			text-decoration: none;
+		}
+    }
     &__location {
         text-align: center;
     }

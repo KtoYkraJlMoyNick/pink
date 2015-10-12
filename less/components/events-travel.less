@@ -45,6 +45,7 @@
             height: 38px;
             border: 2px solid @color-gray;
             box-sizing: border-box;
+			cursor: pointer;
             &:after {
                 content: "";
                 display: none;
@@ -55,6 +56,12 @@
                 height: 16px;
                 background:transparent url('../img/i/i-check.png') no-repeat 0 0;
             }
+			&:hover {
+				border-color: @color-fourth;
+			}
+			&:active {
+				border-color: @color-fifth;
+			}
         }
     }
     @media (min-width: 700px) {
@@ -106,7 +113,7 @@
         }
     }
     @media (min-width: 1200px) {
-        
+        padding: 36px 0 0 0;
         &__wrap {
             width: 940px;
         }

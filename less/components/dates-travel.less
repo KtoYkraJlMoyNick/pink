@@ -22,8 +22,18 @@
         box-sizing: border-box;
         border: 2px solid @color-gray;
         border-radius: 3px;
+		outline: none;
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:focus {
+			border-color: @color-fifth;
+		}
         &--disabled {
             background-color: @color-second;
+			&:hover {
+				border-color: @color-gray;
+			}
         }
         &::-webkit-input-placeholder {
            color: @color-third;

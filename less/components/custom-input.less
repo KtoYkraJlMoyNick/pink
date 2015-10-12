@@ -4,7 +4,7 @@
     &--mod {
         padding: 27px 0 16px;
     }
-	&__btn-minus {
+	&__btn {
 		display: inline-block;
 		vertical-align: top;
 		width: 63px;
@@ -12,22 +12,26 @@
 		box-sizing: border-box;
 		outline: none;
         border: 2px solid @color-gray;
-		border-radius: 3px 0 0 3px;
-		background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
+		border-radius: 3px;
 		cursor: pointer;
-	}
-	&__btn-plus {
-		display: inline-block;
-		vertical-align: top;
-		width: 63px;
-		height: 62px;
-		box-sizing: border-box;
-		outline: none;
-		background-color: @color-main;
-        border: 2px solid @color-gray;
-		border-radius: 0 3px 3px 0;
-		background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
-		cursor: pointer;
+		&--minus {
+			background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
+			&:active {
+				background-image:  url('../img/i/i-minus-white.png');
+			}
+		}
+		&--plus {
+			background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
+			&:active {
+				background-image:  url('../img/i/i-plus-white.png');
+			}
+		}
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:active {
+			background-color: @color-fourth;
+		}
 	}
 	&__input-text {
 		display: inline-block;
@@ -54,9 +58,13 @@
         &--mod {
             padding: 28px 0 16px;
         }
-        &__btn-minus {
-        }
-        &__btn-plus {
+        &__btn{
+			&--minus {
+			
+			} 
+			&--plus {
+			
+			}
         }
         &__input-text {
             width: 114px;
@@ -75,12 +83,16 @@
         &--mod {
             padding: 27px 0 16px;
         }
-        &__btn-minus {
-        }
-        &__btn-plus {
+        &__btn{
+			&--minus {
+			
+			} 
+			&--plus {
+			
+			}
         }
         &__input-text {
-            padding: 15px 0;
+            padding: 15px 0 13px;
             width: 125px;
             &::-webkit-input-placeholder {
             }

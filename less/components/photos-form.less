@@ -28,6 +28,13 @@
 		background-color: @color-main;
 		text-transform: uppercase;
 		cursor: pointer;
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:active {
+			color: @color-main;
+			background-color: @color-fourth;
+		}
 	}
 	&__input-file {
 		display: none;
@@ -48,33 +55,10 @@
 		}
 	}
 	&__img-block {
+		display: block;
 		margin: 0 0 8px 0;
 		width: 67px;
 		height: 67px;
-        &--img1 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat 0 0;
-        }
-        &--img2 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -67px 0;
-        }
-        &--img3 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -135px 0;
-        }
-        &--img4 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -202px 0;
-        }
-        &--img5 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -269px 0;
-        }
-        &--img6 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -337px 0;
-        }
-        &--img7 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -404px 0;
-        }
-        &--img8 {
-            background: #919fb1 url('../img/p/p-upload-img-mobile.jpg') no-repeat -472px 0;
-        }
 	}
 	&__name-photo {
 		font: 400 1.2rem/1.8rem @font;
@@ -93,6 +77,12 @@
 		background: @color-main url('../img/i/i-chest.png') no-repeat 50% 50%;
 		z-index: 100;
 		cursor: pointer;
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:active {
+			background-color: @color-fourth;
+		}
 	}
     @media (min-width: 700px) {
         position: relative;
@@ -139,30 +129,6 @@
         &__img-block {
             width: 120px;
             height: 120px;
-            &--img1 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat 0 0;
-            }
-            &--img2 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -120px 0;
-            }
-            &--img3 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -240px 0;
-            }
-            &--img4 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -360px 0;
-            }
-            &--img5 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -480px 0;
-            }
-            &--img6 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -600px 0;
-            }
-            &--img7 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -720px 0;
-            }
-            &--img8 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -840px 0;
-            }
         }
         &__name-photo {
             font: 400 1.4rem/2.5rem @font;
@@ -191,15 +157,17 @@
         }
         &__label {
 		    margin: 26px 0 33px;  
+			padding: 17px 0;
             color: @color-main;
             background-color: @color-fifth;
+			border: none;
         }
         &__input-file {
             
         }
         &__attached {
             margin: 0 58px;
-            padding: 65px 0 28px 0;
+            padding: 66px 0 28px 0;
         }
         &__item {
             margin: 0 55px 26px 0;
@@ -215,30 +183,6 @@
         }
         &__img-block {
             margin: 0 0 9px 0;
-            &--img1 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat 0 0;
-            }
-            &--img2 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -120px 0;
-            }
-            &--img3 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -240px 0;
-            }
-            &--img4 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -360px 0;
-            }
-            &--img5 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -480px 0;
-            }
-            &--img6 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -600px 0;
-            }
-            &--img7 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -720px 0;
-            }
-            &--img8 {
-                background: #919fb1 url('../img/p/p-upload-img-mobile-big.jpg') no-repeat -840px 0;
-            }
         }
         &__name-photo {
         }
