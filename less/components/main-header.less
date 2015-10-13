@@ -1,4 +1,4 @@
-.main-header {
+.main-header { 
     position: absolute;
     top: 0;
     left: 0;
@@ -6,6 +6,10 @@
     background-color: rgba(28,38,48,.3);
     width: 100%;
     font-size: 0;
+	&__wrap {
+		margin: 0 auto;
+    	width: 280px;
+	}
     &__label{
         position: absolute;
         top: 21px;
@@ -13,7 +17,7 @@
 		display: block;
         width: 50px;
         height: 24px;
-        background: transparent url('../img/i/i-open-menu-btn.png') no-repeat 50% 50%;  
+        background: transparent url('../img/i/i-menu-burger.png') no-repeat 0% 0%;  
 		cursor: pointer;
         z-index: 50;
     }
@@ -26,22 +30,25 @@
 	}
 	&__input {
 		display: none;
-        &:checked ~ .container {
+        &:checked ~ .main-header__wrap {
 			padding: 0 0 0 20px;
-            width: 320px;
+            width: 300px;
             background-color: @color-fourth;
             border-bottom: 1px solid #000;
         }
         &:checked ~ .main-header__nav-wrap {
             display: block;
         }
-        &:checked ~ .container .main-header__label {
+        &:checked ~ .main-header__wrap .main-header__label {
             top: 22px;
             right: 20px;
             background: @color-fourth url('../img/i/i-close-menu-btn.png') no-repeat 90% 50%;
         }
 	}
 	@media (min-width: 700px) {
+		&__wrap {
+			width: 620px;
+		}
 		&__nav-wrap {
        		top: 111px;
 			}
@@ -50,17 +57,20 @@
 			right: 40px;
 			}
 	&__input {
-        &:checked ~ .container {
+        &:checked ~ .main-header__wrap {
 			padding: 0 0 0 40px;
-            width: 700px;
+            width: 660px;
         	}
-        &:checked ~ .container .main-header__label {
+        &:checked ~ .main-header__wrap .main-header__label {
             top: 45px;
             right: 40px;
         	}	
 		}
 	}
 	@media (min-width: 1200px) {
+		&__wrap {
+			width: 940px;
+		}
     	&__label{
         	display: none;
     	}
