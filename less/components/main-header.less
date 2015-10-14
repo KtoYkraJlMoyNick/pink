@@ -17,9 +17,15 @@
 		display: block;
         width: 50px;
         height: 24px;
-        background: transparent url('../img/i/i-menu-burger.png') no-repeat 0% 0%;  
+        background: transparent url('../img/i/i-sprite-menu-btn.png') no-repeat 0 0;  
 		cursor: pointer;
         z-index: 50;
+		&:hover {
+			background-position: -50px 0;  
+		}
+		&:active {
+			background-position: -100px 0;  
+		}
     }
 	&__nav-wrap {
         position: absolute;
@@ -40,9 +46,15 @@
             display: block;
         }
         &:checked ~ .main-header__wrap .main-header__label {
-            top: 22px;
-            right: 20px;
-            background: @color-fourth url('../img/i/i-close-menu-btn.png') no-repeat 90% 50%;
+			width: 23px;
+			height: 22px;
+            background: @color-fourth url('../img/i/i-sprite-menu-btn.png') no-repeat -150px 0;
+			&:hover {
+				background-position: -173px 0;
+			}
+			&:active {
+				background-position: -196px 0;
+			}
         }
 	}
 	@media (min-width: 700px) {

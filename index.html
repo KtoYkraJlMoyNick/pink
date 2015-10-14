@@ -30,7 +30,28 @@
             <section class="ad-app">
                     <div class="ad-app__intro">
                             <p class="ad-app__descr">Взгляните на жизнь<br>иначе!</p>
-							<div class="ad-app__smartphone"></div>
+                            <picture class="ad-app__bg-intro">
+								<source media="(min-width: 1200px)"
+											srcset="./img/p/ 1x,
+											 			 ./img/p/ 2x">
+								<source media="(min-width: 700px)"
+											srcset="./img/p/ 1x,
+											 			 ./img/p/ 2x">			 			 
+								<img src="./img/tmp/background-mobile@x.jpg"
+										 srcset="./img/p/ 2x,
+											 		  ./img/p/ 3x">	
+							</picture>
+							<picture class="ad-app__smartphone">
+								<source media="(min-width: 1200px)"
+											srcset="./img/p/iphone-hand-desktop@1x.png 1x,
+											 			 ./img/p/iphone-hand-desktop@2x.png 2x">
+								<source media="(min-width: 700px)"
+											srcset="./img/p/iphone-hand-tablet@1x.png 1x,
+											 			 ./img/p/iphone-hand-tablet@2x.png 2x">			 			 
+								<img src="./img/p/iphone-hand-mobile.png"
+										 srcset="./img/p/iphone-hand-mobile@2x.png 2x,
+											 		  ./img/p/iphone-hand-mobile@3x.png 3x">	
+							</picture>
                     </div>
                     <div class="ad-app__download">
                        <div class="container">
@@ -38,9 +59,9 @@
                             <div class="ad-app__systems">
                                 <div class="ad-app__img-systems">
                                     <ul class="ad-app__list-systems">
-                                        <li class="ad-app__list-item"><img src="./img/i/i-apple-logo.png" width="46" height="57" alt="apple"></li>
-                                        <li class="ad-app__list-item"><img src="./img/i/i-android-logo.png" width="42" height="47" alt="android"></li>
-                                        <li class="ad-app__list-item"><img src="./img/i/i-windows-logo.png" width="44" height="42" alt="windows"></li>
+                                        <li class="ad-app__list-item"><img src="./img/svg/apple-logo.svg" width="46" height="57" alt="apple"></li>
+                                        <li class="ad-app__list-item"><img src="./img/svg/android-logo.svg" width="42" height="47" alt="android"></li>
+                                        <li class="ad-app__list-item"><img src="./img/svg/microsoft-logo.svg" width="44" height="42" alt="windows"></li>
                                     </ul>
                                     </div>
                                 <p class="ad-app__systems-descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8</p>
@@ -72,9 +93,30 @@
                         </div>
                     </div>
                     <div class="edge-app__img-block">
-                        <div class="edge-app__img-smartphone-1"></div>
-                        <div class="edge-app__img-smartphone-2"></div>
-                        <div class="edge-app__img-smartphone-3"></div>
+                    	<div class="edge-app__img-smartphone-1">
+								<picture>		 			 
+									<img src="./img/p/iphone-screen-desktop-1@1x.png"
+											 srcset="./img/p/iphone-screen-desktop-1@2x.png 2x">	
+								</picture>
+						</div>
+						<div class="edge-app__img-smartphone-2">
+								<picture>		 			 
+									<img src="./img/p/iphone-screen-desktop-2@1x.png"
+											 srcset="./img/p/iphone-screen-desktop-2@2x.png 2x">	
+								</picture>
+						</div>
+						<div class="edge-app__img-smartphone-3">
+								<picture>
+									<source media="(min-width: 1200px)"
+												srcset="./img/p/iphone-screen-desktop-3@1x.png 1x,
+															 ./img/p/iphone-screen-desktop-3@2x.png 2x">
+									<source media="(min-width: 700px)"
+												srcset="./img/p/iphone-screen-tablet-3@1x.png 1x,
+															 ./img/p/iphone-screen-tablet-3@1x.png 2x">			 			 
+									<img src="./img/p/iphone-screen-mobile.png"
+											 srcset="./img/p/iphone-screen-mobile.png 2x">	
+								</picture>
+                   		</div>
                     </div>
                 </div>
                 <div class="edge-app__effect-block">
