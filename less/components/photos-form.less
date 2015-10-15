@@ -74,14 +74,16 @@
 		box-sizing: border-box;
 		border: 2px solid @color-gray;
 		border-radius: 50%;
-		background: @color-main url('../img/i/i-chest.png') no-repeat 50% 50%;
+		background: @color-main url('../img/i/i-cross-small.png') no-repeat 50% 50%;
 		z-index: 100;
 		cursor: pointer;
 		&:hover {
 			border-color: @color-fourth;
+			background-image: url('../img/i/i-cross-small-hover.png');
 		}
 		&:active {
 			background-color: @color-fourth;
+			background-image: url('../img/i/i-cross-small-active.png');
 		}
 	}
     @media (min-width: 700px) {
@@ -138,7 +140,13 @@
             right: -28px;
             width: 56px;
             height: 56px;
-            background: @color-main url('../img/i/i-chest-big.png') no-repeat 50% 50%;
+            background: @color-main url('../img/i/i-cross-big.png') no-repeat 50% 50%;
+			&:hover {
+				background-image: url('../img/i/i-cross-big-hover.png');
+			}
+			&:active {
+				background-image: url('../img/i/i-cross-big-active.png');
+			}
         }
     }
     @media (min-width: 1200px) {
