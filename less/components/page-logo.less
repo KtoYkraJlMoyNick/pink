@@ -33,7 +33,7 @@
 			opacity: .3;
 		}
 	}
-	@media (min-width: 700px) {
+	@media (min-width: @vw-m) {
 		&__svg-mobile {
 			display: none;
 		}
@@ -63,8 +63,11 @@
 			}
 		}
 	} 
-	@media (min-width: 1200px) {
+	@media (min-width: @vw-l) {
 		&__svg-mobile {
+			display: none;
+		}
+		&__svg-portable {
 			display: none;
 		}
 		&__svg-tablet {

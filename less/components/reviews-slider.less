@@ -69,7 +69,7 @@
     .show-review-slide(reviews-slider__, 3);
     .show-label(reviews-slider__, 3);
 	
-	@media (min-width: 700px) {
+	@media (min-width: @vw-m) {
 		&__controls {
         	bottom: 73px;
     	}
@@ -100,7 +100,7 @@
 		    background-image: linear-gradient(-4deg, @color-second 50%, transparent 50% );
 		}
 	}
-	@media (min-width: 1200px) {
+	@media (min-width: @vw-l) {
 		&__controls {
         	display: none;
     	}
