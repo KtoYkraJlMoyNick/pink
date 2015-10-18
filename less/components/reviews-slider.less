@@ -29,20 +29,32 @@
         &:last-child {
             margin: 0;
         }
-    }
-    &__slides {
-        
+		&:hover {
+			background-color: #7e868f;
+		}
+		&:active {
+			background-color: #e9ebec;
+		}
     }
     &__slide {
         display: none;
         padding: 40px 0 107px;
         text-align: center;
     }
+	&__quotes {
+		display: none;
+	}
+	&__arrow {
+		display: none;
+	}
     &__slide-header {
         margin: 0 0 14px;
 		font: 700 1.8rem/3rem @font;
     }
-    &__slide-descr {
+	&__brief {
+		display: none;
+	}
+    &__slide-descr { 
 		font: 400 1.4rem/3rem @font;
     }
 	&__triangle {
@@ -51,9 +63,107 @@
 		bottom: 0;
 		display: block;
 		width: 320px;
-		height: 34px;
-		background-image: linear-gradient(-6deg, @color-second 50%, transparent 50% );
+		height: 22px;
+		background-image: linear-gradient(-4deg, @color-second 50%, transparent 50% );
 	}
     .show-review-slide(reviews-slider__, 3);
     .show-label(reviews-slider__, 3);
+	
+	@media (min-width: 700px) {
+		&__controls {
+        	bottom: 73px;
+    	}
+    	&__slide {
+        	padding: 75px 0 215px;
+        	text-align: center;
+    	}
+		&__header {
+			position: absolute;
+			bottom: 123px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+    	&__slide-header {
+        	margin: 0 0 10px;
+			font: 700 2rem/3rem @font;
+    	}	
+		&__brief {
+			display: block;
+			font: 400 1.4rem/2rem @font;
+		}
+    	&__slide-descr {
+			font: 400 1.8rem/3rem @font;
+    	}
+		&__triangle {
+			width: 100%;
+			height: 54px;
+		    background-image: linear-gradient(-4deg, @color-second 50%, transparent 50% );
+		}
+	}
+	@media (min-width: 1200px) {
+		&__controls {
+        	display: none;
+    	}
+    	&__slide {
+        	padding: 68px 0 226px;
+        	text-align: center;
+    	}
+		&__quotes {
+			display: block;
+			margin: 0 auto 50px;
+			width: 82px;
+			height: auto;
+			fill: @color-second;
+		}
+		&__arrow {
+			position: absolute;
+			top: 212px;
+			width: 22px;
+			display: block;
+			height: 42px;
+			fill: #bec2c7;
+			cursor: pointer;
+            background: transparent url('../img/i/i-sprite-arrow.png') no-repeat 0 0;
+			&--left {
+				left: 130px;
+                background-position: 0 0;
+                &:hover {
+                    background-position: -22px 0;
+                }
+                &:active {
+                    background-position: -44px 0;
+                }
+			}
+			&--right {
+				right: 130px;
+                background-position: -66px 0;
+                &:hover {
+                    background-position: -88px 0;
+                }
+                &:active {
+                    background-position: -110px 0;
+                }
+			}
+		}
+		&__header {
+			bottom: 129px;
+		}
+    	&__slide-header {
+			margin: 0;
+			font: 700 2.4rem/3rem @font;
+    	}	
+    	&__slide-descr {
+			margin: 0 auto;
+			width: 680px;
+			span {
+				display: none;
+			}
+    	}
+		&__brief {
+			font: 400 1.8rem/3rem @font;
+		}
+		&__triangle {
+			height: 92px;
+		}
+	}
 }

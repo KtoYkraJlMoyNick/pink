@@ -22,8 +22,18 @@
         box-sizing: border-box;
         border: 2px solid @color-gray;
         border-radius: 3px;
+		outline: none;
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:focus {
+			border-color: @color-fifth;
+		}
         &--disabled {
             background-color: @color-second;
+			&:hover {
+				border-color: @color-gray;
+			}
         }
         &::-webkit-input-placeholder {
            color: @color-third;
@@ -37,4 +47,95 @@
         color: @color-fifth;
         text-transform: uppercase;
 	}
+    @media (min-width: 700px) {
+        position: relative;
+        padding: 65px 0 45px;
+        &__descr {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            margin: 0;
+            padding: 0 20px;
+            transform: translateX(-50%);
+            background-color: @color-main;
+        }
+        &__items {
+            padding: 43px 58px 6px;
+            font-size: 0;
+            text-align: left;
+            border: 2px solid @color-gray;
+        }
+        &__item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 20px 26px 0;
+            &--mod {
+                margin: 0;
+                width: 240px;
+                padding: 0 0 15px 0;
+            }
+        }
+        &__input-text {
+            margin: 0px 0 11px 0;
+            padding: 14px 18px;
+            width: 240px;
+            font: 400 1.8rem/3rem @font;
+            &--disabled {
+            }
+            &::-webkit-input-placeholder {
+            }
+        }
+        &__label {
+            padding: 0 20px;
+            &--mod {
+                text-align: center;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 65px 0 20px;
+        &__descr {
+        }
+        &__items {
+            padding: 43px 56px 13px;
+        }
+        &__item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            &--mod {
+                margin: 0 44px;
+                width: 252px;
+                padding: 0;
+            }
+        }
+        &__input-text {
+            display: block;
+            margin: 0px 0 11px 0;
+            padding: 14px 20px;
+            width: 240px;
+            font: 400 1.8rem/3rem @font;
+            color: @color-third;
+            box-sizing: border-box;
+            border: 2px solid @color-gray;
+            border-radius: 3px;
+            &--disabled {
+                background-color: @color-second;
+            }
+            &::-webkit-input-placeholder {
+               color: @color-third;
+            }
+        }
+        &__label {
+            display: block;
+            padding: 0 22px 0 22px;
+            box-sizing: border-box;
+            font: 400 1.4rem/3rem @font;
+            color: @color-fifth;
+            text-transform: uppercase;
+            &--mod {
+                text-align: center;
+            }
+        }
+    }
 }

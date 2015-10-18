@@ -32,6 +32,7 @@
 			border: 2px solid @color-gray;
 			border-radius: 50%;
 			background-color: @color-main;
+            cursor: pointer;
             &:after {
                 content: "";
                 display: none;
@@ -42,13 +43,78 @@
                 height: 15px;
                 background-color: @color-fifth;
                 border-radius: 50%;
+				outline: none;
             }
+			&:hover {
+				border-color: @color-fourth;
+			}
+			&:active {
+				border-color: @color-fifth;
+			}
         }
     }
     &__radio-btn {
-        display: none;
-        &:checked ~ .app-form__label span:after{
-            display: block;
+            display: none;
+            &:checked ~ .app-form__label span:after{
+                display: block;
+            }
+        }
+    @media (min-width: 700px) {
+        position: relative;
+        padding: 50px 0 0;
+        background-color: @color-main;
+        &__header {
+            position: absolute;
+            top: 42px;
+            left: 50%;
+            margin: 0;
+            padding: 0 20px;
+            white-space: nowrap;
+            transform: translateX(-50%);
+            font: 400 1.4rem/1.8rem @font;
+            background-color: @color-main;
+        }
+        &__units {
+            padding: 52px 0 17px 57px;
+            border: 2px solid @color-gray;
+        }
+        &__unit {
+            text-align: left;
+        }
+        &__label {
+            margin: 0 0 36px 0;
+            padding: 4px 0 5px 61px;
+            span {
+                &:after {
+                }
+            }
+        }
+        &__radio-btn {
+            &:checked ~ .app-form__label span:after{
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        &__header {
+        }
+        &__units {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__unit {
+            width: 254px;
+            text-align: left;
+        }
+        &__label {
+            span {
+                &:after {
+                }
+            }
+        }
+        &__radio-btn {
+            &:checked ~ .app-form__label span:after{
+            }
         }
     }
 }

@@ -1,13 +1,22 @@
-.edge-app {
+.edge-app { 
     position: relative;
     padding: 0 0 285px;
     background-color: @color-second;
-    overflow: hidden;
-    &__img-smartphone{
-            position: absolute;
-            left: 50%;
-            bottom: -42px;
-            margin-left: -78px; 
+    &__img-block {
+        position: absolute;
+        left: 50%;
+        bottom: -320px;
+        margin-left: -79px; 
+    }
+    &__img-smartphone-1{
+        display: none;
+     }
+    &__img-smartphone-2{
+        display: none;
+     }
+    &__img-smartphone-3{
+        width: 158px;
+        height: 278px;
      }
     &__title {
 		position: relative;
@@ -24,9 +33,11 @@
         }
     }
     &__samples {
+        position: relative;
         padding-top: 55px;
     }
     &__sample {
+        margin: 0 0 35px;
         text-align: center;
     }
     &__sample-header {
@@ -35,7 +46,6 @@
         color: @color-h3;
     }
     &__sample-descr {
-        margin: 0 0 35px;
 		font: 400 1.4rem/2.4rem @font;
         color: @color-fourth;
     }
@@ -48,5 +58,242 @@
 		height: 34px;
 		background-image: linear-gradient(-6deg, @color-second 50%, transparent 50% );
 	}
-    
+    &__effect-block {
+        display: none;
+    }
+    @media (min-width: 700px) {   
+        padding: 0;
+        background-color: @color-second;
+        &__img-block {
+            position: absolute;
+            left: -230px;
+            bottom: 0; 
+        }
+        &__img-smartphone-3{
+            width: 268px;
+            height: 481px;
+         }
+        &__title {
+		    position: relative;
+            padding: 47px 0 97px;
+        }
+    &__title-unit {
+		font: 300 4rem/4.9rem @font;
+        &:first-child {
+            margin-bottom: 0px;
+        }
+        &:last-child {
+            margin: 0 auto;
+            width: 340px;
+        }
+    }
+    &__samples {
+        position: relative;
+        margin: 0 0 0 350px;
+        padding: 28px 0 4px;
+        width: 311px;
+        & .container {
+            width: 100%;
+        }
+            }
+        &__sample {
+            margin: 0 0 39px;
+            text-align: left;
+        }
+        &__sample-header {
+        margin: 0 0 13px;
+        }
+        &__sample-descr {
+            margin: 0 0 35px;
+        }
+	    &__triangle {
+            width: 100%;
+		    height: 53px;
+		    background-image: linear-gradient(-4deg, @color-second 50%, transparent 50% );
+	    }
+        &__effect-block {
+            display: block;
+			padding: 57px 0 0;
+            font-size: 0;
+            background-color: @color-main;
+        }
+        &__time-effect {
+            display: inline-block;
+            vertical-align: top;
+			margin: 0 48px 0 0;
+			padding: 64px 0 0 24px;
+            width: 262px;
+			height: 302px;
+			box-sizing: border-box;
+            text-align: center;
+			background: @color-main url('../img/svg/timer-tablet.svg') no-repeat 0 0;
+        }
+        &__time-icon {
+            display: block;
+            width: 216px;
+            height: 216px;
+            font: 700 10.5rem/18.1rem @font;
+            color: @color-fifth;
+            box-sizing: border-box;
+            border: 11px solid @color-fifth;
+            border-radius: 50%;
+        
+        }
+        &__about-effect {
+            display: inline-block;
+            vertical-align: top;
+			padding: 38px 0 0;
+            width: 310px;
+        }
+        
+        &__effect-header {
+            margin: 0 0 11px;
+            font: 700 3rem/3.6rem @font;
+            color: @color-h3;
+            span {
+                display: block;
+            }
+        }
+        &__effect-descr {
+            margin: 0 0 10px;
+            padding: 0 10px 0 0;
+		    font: 400 1.4rem/2.4rem @font;
+            color: @color-fourth;
+            span {
+                display: block;
+            }
+        }
+        &__effect-link {
+		    font: 400 1.4rem/2.4rem @font;
+            color: @color-fifth;
+			&:hover {
+				color: @color-fourth;
+				text-decoration: none;
+			}
+			&:active {
+				opacity: .3;
+			}
+        }
+    }
+    @media (min-width: 1200px) {
+        background-color: @color-second;
+        &__img-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+            left: 39px;
+            bottom: auto; 
+			top: -357px;
+			width: 965px;
+        }
+		&__img-smartphone-1{
+			display: inline-block;
+			vertical-align: top;
+            width: 292px;
+            height: 302px;
+         }
+		&__img-smartphone-2{
+			display: inline-block;
+			vertical-align: top;
+            width: 292px;
+            height: 302px;
+         }
+        &__img-smartphone-3{
+			display: inline-block;
+			vertical-align: top;
+            width: 292px;
+            height: 302px;
+         }
+        &__title {
+		    position: relative;
+			margin: 0 0 265px;
+            padding: 67px 0 167px;
+        }
+    &__title-unit {
+		font: 300 5rem/6rem @font;
+        &:first-child {
+            margin-bottom: 0px;
+        }
+        &:last-child {
+            margin: 0 auto;
+            width: 450px;
+        }
+    }
+    &__samples {
+		margin: 0 auto;
+        padding: 0;
+        width: 881px;
+		font-size: 0;
+        & .container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+        		}
+          }
+        &__sample {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+            text-align: center;
+			width: 240px;
+        }
+        &__sample-header {
+			font: 700 3rem/3rem @font;
+        	margin: 0 0 25px;
+        }
+        &__sample-descr {
+			font: 400 1.8rem/3rem @font;
+            margin: 0;
+        }
+	    &__triangle {
+		    height: 92px;
+	    }
+        &__effect-block {
+			padding: 65px 0 67px;
+            background-color: @color-second;
+        }
+        &__time-effect { 
+			padding: 73px 0 0 27px;
+            width: 300px;
+			height: 347px;
+			fill: #dedede;
+			background: @color-second url('../img/svg/timer-desktop.svg') no-repeat 0 0;
+        }
+        &__time-icon {
+            width: 246px;
+            height: 246px;
+            font: 700 12rem/21.1rem @font;
+            color: @color-fifth;
+            box-sizing: border-box;
+            border: 11px solid @color-fifth;
+            border-radius: 50%;
+        
+        }
+        &__about-effect {
+            display: inline-block;
+            vertical-align: top;
+			margin: 0 0 0 18px;
+			padding: 95px 0 0;
+            width: 523px;
+        }
+        
+        &__effect-header {
+            margin: 0 0 24px;
+            font: 700 3rem/3rem @font;
+            span {
+                display: inline;
+            }
+        }
+        &__effect-descr {
+            margin: 0 0 31px;
+		    font: 400 1.8rem/3rem @font;
+            span {
+                display: inline;
+            }
+        }
+        &__effect-link {
+		    font: 400 1.8rem/3rem @font;
+        }
+    }
 }
