@@ -94,5 +94,13 @@
 			display: inline-block;
 			text-align: right;
 		}	
+        &__input {
+            &:checked ~ .main-header__wrap {
+                padding: 0;
+                width: 940px;
+                background-color: transparent;
+                border-bottom: none;
+        	}
+        }
 	} 
 }
