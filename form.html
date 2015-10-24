@@ -223,7 +223,8 @@
                             <div class="partners__quantity">
                                 <div class="custom-input custom-input--mod">
                                     <button class="custom-input__btn custom-input__btn--minus" type="button"></button>
-                                    <input class="custom-input__input-text  custom-input__input-text--mod" type="text" id="quantity-prt" name="quantity-prt" placeholder="2 чел" required>
+                                        <label class="custom-input__custom-label" for="quantity-prt">чел</label>
+                                        <input class="custom-input__input-text  custom-input__input-text--mod" type="number" min="0"                                          max="9" id="quantity-prt" name="quantity-prt" value="2" required disabled>
                                     <button class="custom-input__btn custom-input__btn--plus" type="button"></button>
                                 </div>
                             </div>
@@ -356,7 +357,7 @@
             <footer class="main-footer main-footer--form-mobile">
                <div class="main-footer__wrap">
                     <a class="page-logo page-logo--footer" href="#">
-                    	<svg class="page-logo__svg-mobile page-logo__svg-tablet" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+                    	<svg class="page-logo__svg-tablet-form" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
 							<g>
 								<path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064
 									c0,4.861-4.057,7.373-8.854,7.373h-5.474v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z
@@ -509,5 +510,6 @@
 		</div>
     </div>        
     <script src="js/script.js"></script>
+    <script src="js/range.js"></script>
 </body>
 </html>
