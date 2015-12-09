@@ -1,0 +1,246 @@
+.offers-slider {
+    position: relative;
+    height: 449px;
+    background-color: @color-second;
+    overflow: hidden;
+    &__radio {
+        display: none;
+    }
+    &__controls { 
+        position: absolute;
+        left: 50%;
+        bottom: 46px;
+        width: 68px;
+        height: 12px;
+        margin: 0 0 0 -31px;
+        text-align: center;
+    }
+    &__controls-label {
+        margin: 0 10px 0 0;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: #bec2c7;
+        border: 3px solid @color-second;
+        border-radius: 50%;
+        cursor: pointer;
+        &:last-child {
+            margin: 0;
+        }
+		&:hover {
+			background-color: #7e868f;
+		}
+		&:active {
+			background-color: #e9ebec;
+		}
+    }
+    &__slides {
+        position: absolute;
+        top: 70px;
+        background-color: @color-main;
+        font-size: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__slide {
+        display: inline-block;
+        vertical-align: top;
+		width: 284px;
+        border: 2px solid @color-gray;
+        border-top: none;
+		box-sizing: border-box;
+		&:nth-child(1) {
+			display: none;
+		}
+        &:nth-child(3) {
+            border: none;
+            border-bottom: 2px solid @color-gray;
+        }
+    }
+    &__tariff {
+        position: relative;
+        padding: 17px 0 21px;
+        background-color: @color-fourth;
+        text-align: center;
+        &--mod:after {   
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            content:""; 
+            display: block;
+            width: 74px;
+            height: 73px;
+            background: transparent url('../img/i/i-label-hit.png') no-repeat 0 0;
+        }
+    }
+    &__tariff-header {
+		font: 700 1.8rem/3rem @font;
+        color: @color-main;
+        text-transform: uppercase;
+    }
+    &__tariff-price {
+		font: 300 2.4rem/3rem @font;
+        color: @color-main;
+        text-transform: uppercase;
+    }
+    &__edge-tariff {
+    }
+    &__list-item {
+        position: relative;
+        border-bottom: 2px solid @color-gray;
+        &:last-child {
+            border-bottom: none;
+        }
+		&--yes:after {
+			content: "";
+        	position: absolute;
+        	right: 25px;
+        	top: 50%;
+        	margin-top: -11px;
+        	width: 29px;
+        	height: 22px;
+        	background: transparent url('../img/svg/yes.svg') no-repeat 0 0;	
+		}
+		&--no:after {
+			content: "";
+        	position: absolute;
+        	right: 27px;
+        	top: 50%;
+        	margin-top: -13px;
+        	width: 26px;
+        	height: 26px;
+        	background: transparent url('../img/svg/no.svg') no-repeat 0 0; 
+			}
+    }
+    &__title-edge {
+        margin:0 55px 0 22px;
+        padding: 14px 0 15px;
+		font: 400 1.4rem/3rem @font;
+        color: @color-fourth;
+        text-transform: uppercase;
+    	overflow: hidden;
+    }
+    #offers-slider__btn-1:checked  ~ .offers-slider__slides {
+        left: 0;
+    }
+    #offers-slider__btn-2:checked  ~ .offers-slider__slides {
+         left: -262px;
+     }
+     #offers-slider__btn-3:checked  ~ .offers-slider__slides {
+         right: 0;
+     }
+    .show-label(offers-slider__, 3);
+	
+	@media (min-width: 700px) {
+    	height: auto;
+    	&__controls { 
+        	display: none;
+   		 }
+    	&__slides {
+			position: static;
+			margin: 35px auto 68px;
+			width: 620px;
+			background-color: @color-second;
+    	}
+    	&__slide {
+			width: 155px;
+			background-color: @color-main;
+        	&:nth-child(1) {
+				display: inline-block;
+            	vertical-align: bottom;
+        		border: 2px solid @color-gray;
+				border-right: none;
+        	}
+    	}
+    	&__tariff {
+        	padding: 14px 0 15px;
+        	&--mod:after {   
+            	top: 0;
+            	left: 0;
+            	width: 61px;
+            	height: 61px;
+            	background: transparent url('../img/i/i-label-hit-tablet.png') no-repeat 0 0;
+        	}
+			&--border {
+				border-left: 2px solid @color-fourth;	
+			}
+			&--blank {
+				display: none;
+			}
+    	}
+    	&__tariff-header {
+			font: 700 1.6rem/3rem @font;
+    	}
+    	&__tariff-price {
+			font: 300 1.8rem/2rem @font;
+    	}
+    	&__list-item {
+       		position: relative;
+        	border-bottom: 2px solid @color-gray;
+        	&:last-child {
+            border-bottom: none;
+        }
+		&--yes:after {
+			left: 50%;
+        	right: auto;
+        	top: 50%;
+        	margin: -9px 0 0 -14px;
+		}
+		&--no:after {
+			left: 50%;
+        	right: auto;
+        	top: 50%;
+        	margin: -14px 0 0 -13px;
+        	width: 26px;
+        	height: 26px;
+        	background: transparent url('../img/svg/no.svg') no-repeat 0 0; 
+			}
+    }
+    	&__title-edge {
+			opacity: 0;
+        	margin:0 0 0 15px;
+        	padding: 7px 0 9px;
+			font: 400 1.4rem/3rem @font;
+        	text-transform: none;
+			&--mod {
+				opacity: 1;
+			}
+    }
+}
+	@media (min-width: 1200px) {
+    	&__slides {
+			margin: 60px auto 95px;
+			width: 940px;
+    	}
+    	&__slide {
+			width: 235px;
+    	}
+    	&__tariff {
+        	padding: 18px 0 22px;
+        	&--mod:after {   
+            	width: 74px;
+            	height: 73px;
+            	background: transparent url('../img/i/i-label-hit.png') no-repeat 0 0;
+        	}
+    	}
+    	&__tariff-header {
+			font: 700 1.8rem/3rem @font;
+    	}
+    	&__tariff-price {
+			font: 300 2.4rem/3rem @font;
+    	}
+    	&__list-item {
+			&--yes:after {
+				
+			}
+			&--no:after { 
+				
+				}
+    	}
+    	&__title-edge {
+        	margin:0 0 0 20px;
+        	padding: 13px 0 16px;
+			font: 400 1.8rem/3rem @font;
+    	}
+	}
+}

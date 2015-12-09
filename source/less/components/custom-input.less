@@ -1,0 +1,124 @@
+.custom-input { 
+    position: relative;
+	padding: 20px 0 9px;
+	font-size: 0;
+    &--mod {
+        padding: 27px 0 16px;
+    }
+    &__custom-label {
+        position: absolute;
+        top: 42px;
+        right: 117px;
+        font: 400 1.8rem/3rem @font;
+    }
+	&__btn {
+		display: inline-block;
+		vertical-align: top;
+		width: 63px;
+		height: 62px;
+		box-sizing: border-box;
+		outline: none;
+        border: 2px solid @color-gray;
+		border-radius: 3px;
+		cursor: pointer;
+		&--minus {
+			background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
+			&:active {
+				background-image:  url('../img/i/i-minus-white.png');
+			}
+		}
+		&--plus {
+			background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
+			&:active {
+				background-image:  url('../img/i/i-plus-white.png');
+			}
+		}
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:active {
+			background-color: @color-fourth;
+		}
+	}
+	&__input-text {
+		display: inline-block;
+		vertical-align: top;
+        padding: 14px 22px;
+        width: 154px;
+		font: 400 1.8rem/3rem @font;
+        color: @color-third;
+		text-align: center;
+        box-sizing: border-box;
+        border: 2px solid @color-gray;
+        border-left: none;
+        border-right: none;
+        &::-webkit-input-placeholder {
+           color: @color-third;
+        }
+		&--mod {
+            padding: 14px 0 14px 54px;
+            text-align: left;
+			background-color: @color-second;
+		}
+	}
+    @media (min-width: 700px) {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 11px;
+        padding: 0;
+        &--mod {
+            padding: 27px 0 16px;
+        }
+        &__custom-label {
+            top: 42px;
+            right: 104px;
+        }
+        &__btn{
+			&--minus {
+			
+			} 
+			&--plus {
+			
+			}
+        }
+        &__input-text {
+            width: 114px;
+            &::-webkit-input-placeholder {
+            }
+            &--mod {
+                width: 125px;
+                padding: 15px 0 18px 38px;
+                background-color: @color-main;
+                border: none;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        margin: 0 0 11px;
+        padding: 0;
+        &--mod {
+            padding: 27px 0 16px;
+        }
+        &__custom-label {
+            top: 42px;
+        }
+        &__btn{
+			&--minus {
+			
+			} 
+			&--plus {
+			
+			}
+        }
+        &__input-text {
+            padding: 15px 0 13px;
+            width: 125px;
+            &::-webkit-input-placeholder {
+            }
+            &--mod {
+                padding: 15px 0 18px 38px;
+                background-color: @color-main;
+            }
+        }
+    }
+}
