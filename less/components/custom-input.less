@@ -1,47 +1,50 @@
-.custom-input {
+.custom-input { 
 	padding: 20px 0 9px;
 	font-size: 0;
     &--mod {
         padding: 27px 0 16px;
     }
-	&__btn-minus {
+	&__btn {
 		display: inline-block;
 		vertical-align: top;
-		width: 60px;
+		width: 63px;
 		height: 62px;
 		box-sizing: border-box;
 		outline: none;
         border: 2px solid @color-gray;
-		border-right: none;
-		border-radius: 3px 0 0 3px;
-		background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
+		border-radius: 3px;
 		cursor: pointer;
-	}
-	&__btn-plus {
-		display: inline-block;
-		vertical-align: top;
-		width: 60px;
-		height: 62px;
-		box-sizing: border-box;
-		outline: none;
-		border: none;
-		background-color: @color-main;
-        border: 2px solid @color-gray;
-		border-left: none;
-		border-radius: 0 3px 3px 0;
-		background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
-		cursor: pointer;
+		&--minus {
+			background: @color-main url('../img/i/i-minus.png') no-repeat 50% 50%;
+			&:active {
+				background-image:  url('../img/i/i-minus-white.png');
+			}
+		}
+		&--plus {
+			background: @color-main url('../img/i/i-plus.png') no-repeat 50% 50%;
+			&:active {
+				background-image:  url('../img/i/i-plus-white.png');
+			}
+		}
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:active {
+			background-color: @color-fourth;
+		}
 	}
 	&__input-text {
 		display: inline-block;
 		vertical-align: top;
         padding: 14px 22px;
-        width: 160px;
+        width: 154px;
 		font: 400 1.8rem/3rem @font;
         color: @color-third;
 		text-align: center;
         box-sizing: border-box;
         border: 2px solid @color-gray;
+        border-left: none;
+        border-right: none;
         &::-webkit-input-placeholder {
            color: @color-third;
         }
@@ -49,4 +52,53 @@
 			background-color: @color-second;
 		}
 	}
+    @media (min-width: 700px) {
+        margin: 0 0 11px;
+        padding: 0;
+        &--mod {
+            padding: 28px 0 16px;
+        }
+        &__btn{
+			&--minus {
+			
+			} 
+			&--plus {
+			
+			}
+        }
+        &__input-text {
+            width: 114px;
+            &::-webkit-input-placeholder {
+            }
+            &--mod {
+                width: 125px;
+                background-color: @color-main;
+                border: none;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        margin: 0 0 11px;
+        padding: 0;
+        &--mod {
+            padding: 27px 0 16px;
+        }
+        &__btn{
+			&--minus {
+			
+			} 
+			&--plus {
+			
+			}
+        }
+        &__input-text {
+            padding: 15px 0 13px;
+            width: 125px;
+            &::-webkit-input-placeholder {
+            }
+            &--mod {
+                background-color: @color-main;
+            }
+        }
+    }
 }

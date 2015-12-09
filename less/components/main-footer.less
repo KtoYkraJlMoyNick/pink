@@ -1,0 +1,33 @@
+.main-footer {
+    display: none;
+	&__wrap {
+		margin: 0 auto;
+	}
+    &--form-mobile {
+        display: block;
+    }
+    @media (min-width: 700px) {
+        display: block;
+		padding: 36px 0;
+        &--index-tablet {
+		    padding: 35px 0;
+        }
+		&__wrap {
+			font-size: 0;
+			width: 620px;
+		}
+    }
+	@media (min-width: 1200px) {
+		padding: 8px 0 72px;
+		&--desktop {
+			padding: 70px 0 72px;
+		}
+		&__wrap {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			width: 940px;
+		}
+    }
+}

@@ -1,9 +1,29 @@
-.descr-page {
+.descr-page { 
     padding: 95px 0 52px;
-    background: #2b3a4a url('../img/p/p-bg-intro.jpg') no-repeat 0 0;
+    background: #2b3a4a url('../img/p/p-bg-intro-mobile.jpg') no-repeat 0 0;
     text-align: center;
+	background-size: cover;
+	
     &__header {
 		font: 300 2.4rem/3rem @font;
         color: @color-main;
     }
+		@media (min-width: 700px) {
+		padding: 179px 0 79px;
+		background: #2b3a4a url('../img/p/p-bg-intro-tablet@1x.jpg') no-repeat 50% 0;
+
+		&__header {
+            padding: 0 10px;
+			font: 300 5rem/6.1rem @font;
+		}
+	}
+	@media (min-width: 1200px) {
+		padding: 173px 0 100px;
+		background: #2b3a4a url('../img/p/p-bg-intro-desktop.jpg') no-repeat 0 0;
+
+		&__header {
+            padding: 0;
+			font: 300 5rem/6rem @font;
+		}
+	}
 }

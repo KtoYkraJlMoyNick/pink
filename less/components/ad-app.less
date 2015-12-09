@@ -4,9 +4,24 @@
         position: relative;
         padding: 90px 0 0 0;
         width: 100%;
-        height: 367px;
-        background: #2b3a4a url('../img/p/p-bg-intro.jpg') no-repeat 0 0;
+        height: 457px;
         overflow: hidden;
+		box-sizing: border-box;
+    }
+    &__bg-intro {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: auto;
+        z-index: -1;
+        img {
+            width: auto;
+            max-width: none;
+            height: 100%;
+            transform: translateX(-25%);
+        }
     }
     &__descr {
         display: block;
@@ -19,11 +34,14 @@
     &__smartphone{
         position: absolute;
         left: 0;
-        bottom: -28px;
+        bottom: 0px;
+		width: 258px;
+		height: 286px;
     }
     &__download {
         padding: 27px 0 30px;
         background-color: @color-third;
+        box-sizing: border-box;
     }
     &__download-link {
         display: block;
@@ -35,6 +53,13 @@
         text-align: center;
         border: 3px solid @color-main;
         border-radius: 27px;
+		&:hover {
+			color: @color-fifth;
+			background-color: @color-main;
+		}
+		&:active {
+			color: lighten(@color-fifth, 30%);
+		}
     }
     &__systems {
     
@@ -69,4 +94,97 @@
         text-align: center;
         opacity: .6;
     }
+	@media (min-width: 700px) {
+		position: relative;
+		& .container {
+			width: 320px;
+		}
+			&__intro {
+				padding: 200px 0 0;
+       			height: 729px;
+    		}
+            &__bg-intro {
+                
+                img {
+                    transform: translateX(-20%);
+                }
+            }
+    		&__descr {
+        		display: inline-block;
+        		margin: 0 0 0 90px;
+				width: 200px;
+				font: 300 4rem/4.9rem @font;
+        		opacity: 1;
+    		}
+    		&__download {
+        		position: absolute;
+				top: 378px;
+				left: 30px;
+				padding: 0;
+       			background-color: transparent;
+    		}
+    		&__download-link {
+				margin: 0 0 45px 10px;
+                padding: 15px 0 17px;
+				width: 275px;
+        
+    		}
+   			&__img-systems {
+        		margin-bottom: 35px;
+    		}
+    		&__systems-descr{
+				font: 300 1.8rem/2.4rem @font;
+    		}
+    		&__smartphone{
+        		top: 184px;
+        		bottom: auto;
+				width: 700px;
+				height: 545px;
+    		}
+		} 
+	@media (min-width: 1200px) {
+		    position: relative;
+		    & .container {
+			    width: 300px;
+		    }
+			&__intro {
+				padding: 218px 0 0;
+       			height: 853px;
+    		}
+            &__bg-intro {
+
+                    img {
+                        transform: translateX(-3%);
+                    }
+                }
+    		&__descr {
+        		display: inline-block;
+        		margin: 0 0 0 155px;
+				width: 250px;
+				font: 300 5rem/6rem @font;
+    		}
+    		&__download {
+        		position: absolute;
+				top: 450px;
+				left: 130px;
+    		}
+    		&__download-link {
+				margin: 0 auto 66px;
+				padding: 15px 0 14px;
+		        font: 700 2.1rem/2.1rem @font;
+                width: 100%;
+                box-sizing: border-box;
+    		}
+   			&__img-systems {
+        		margin-bottom: 54px;
+    		}
+    		&__smartphone{
+        		top: auto;
+        		bottom: 0;
+                right: 4px;
+                left: auto;
+				width: 1050px;
+				height: 645px;
+    		}
+	} 
 }

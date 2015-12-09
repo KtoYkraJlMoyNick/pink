@@ -1,5 +1,9 @@
 .photos-form {
 	background-color: @color-second;
+    &__wrap {
+        margin: 0 auto;
+        width: 280px;
+    }
 	&__upload {
 		padding: 29px 0 0 0;
 		text-align: center;
@@ -14,7 +18,7 @@
 	}
 	&__label {
 		display: block;
-		margin: 25px 0 33px;
+		margin: 27px 0 33px;
 		padding: 15px 0 16px;
 		font: 700 1.8rem/3rem @font;
         color: @color-third;
@@ -24,6 +28,13 @@
 		background-color: @color-main;
 		text-transform: uppercase;
 		cursor: pointer;
+		&:hover {
+			border-color: @color-fourth;
+		}
+		&:active {
+			color: @color-main;
+			background-color: @color-fourth;
+		}
 	}
 	&__input-file {
 		display: none;
@@ -44,12 +55,10 @@
 		}
 	}
 	&__img-block {
+		display: block;
 		margin: 0 0 8px 0;
 		width: 67px;
 		height: 67px;
-	}
-	&__img {
-	
 	}
 	&__name-photo {
 		font: 400 1.2rem/1.8rem @font;
@@ -65,8 +74,127 @@
 		box-sizing: border-box;
 		border: 2px solid @color-gray;
 		border-radius: 50%;
-		background: @color-main url('../img/i/i-chest.png') no-repeat 50% 50%;
+		background: @color-main url('../img/i/i-cross-small.png') no-repeat 50% 50%;
 		z-index: 100;
 		cursor: pointer;
+		&:hover {
+			border-color: @color-fourth;
+			background-image: url('../img/i/i-cross-small-hover.png');
+		}
+		&:active {
+			background-color: @color-fourth;
+			background-image: url('../img/i/i-cross-small-active.png');
+		}
 	}
+    @media (min-width: 700px) {
+        position: relative;
+        padding: 66px 0 0;
+        background-color: @color-main;
+        &__wrap {
+            width: 620px;
+            box-sizing: border-box;
+            border: 2px solid @color-gray;
+        }
+        &__upload {
+            padding: 14px 58px 7px;
+        }
+        &__header {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            padding: 0 27px;
+            transform: translateX(-50%);
+            background-color: @color-main;
+        }
+        &__upload-btn {
+
+        }
+        &__label {
+            
+        }
+        &__input-file {
+            display: none;
+        }
+        &__attached {
+            margin: 0 58px;
+            padding: 50px 0 42px 0;
+        }
+        &__item {
+            margin: 49px 70px 0 0;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            &--mod {
+                margin: 16px 70px 0 0;
+            }
+        }
+        &__img-block {
+            width: 120px;
+            height: 120px;
+        }
+        &__name-photo {
+            font: 400 1.4rem/2.5rem @font;
+        }
+        &__remove-photo {
+            top: -28px;
+            right: -28px;
+            width: 56px;
+            height: 56px;
+            background: @color-main url('../img/i/i-cross-big.png') no-repeat 50% 50%;
+			&:hover {
+				background-image: url('../img/i/i-cross-big-hover.png');
+			}
+			&:active {
+				background-image: url('../img/i/i-cross-big-active.png');
+			}
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 65px 0 0;
+        &__wrap {
+            width: 940px;
+        }
+        &__upload {
+            padding: 14px 58px 7px;
+        }
+        &__header {
+            top: 50px;
+        }
+        &__upload-btn {
+
+        }
+        &__label {
+		    margin: 26px 0 33px;  
+			padding: 17px 0;
+            color: @color-main;
+            background-color: @color-fifth;
+			border: none;
+        }
+        &__input-file {
+            
+        }
+        &__attached {
+            margin: 0 58px;
+            padding: 66px 0 28px 0;
+        }
+        &__item {
+            margin: 0 55px 26px 0;
+            &:nth-child(3n) {
+                margin-right: 55px;
+            }
+            &:nth-child(5n) {
+                margin-right: 0;
+            }
+            &--mod {
+                margin: 0 55px 26px 0;
+            }
+        }
+        &__img-block {
+            margin: 0 0 9px 0;
+        }
+        &__name-photo {
+        }
+        &__remove-photo {
+        }
+    }
 }
